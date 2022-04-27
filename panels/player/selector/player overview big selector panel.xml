@@ -1,0 +1,64 @@
+<panel>
+    <container id="SUBP" class="inner_box_no_margin">
+        <layout class="stick_to_sides_attachment" alignment="all" apply_to_children="true" inset="0"/>
+        <layout class="stick_to_sides_attachment" alignment="all" inset="0"/>
+    </container>
+
+    <widget class="popup_button" id="popv" auto_size="horizontal" height="20" click_event="msis"
+            appearance="buttons/custom/customise panel/button" fixed="true" prme="false" navigation_focus_target="true">
+        <layout class="stick_to_sides_attachment" alignment="right,top" inset="6"/>
+    </widget>
+
+    <widget file="player/kojuro/analyser panels/player attribute analyser panel" id="paAn" class="client_object_viewer_xml_panel"
+            late_loading="true">
+            <widget class="text" alignment="left,centre_y" font="title" auto_size="vertical">
+              <translation id="text" translation_id="334971" type="use" value="Attribute Analysis[COMMENT: player overview; title for a panel showing an attribute analyisis diagram]" />
+             </widget>
+        <translation id="title" translation_id="334971" type="use"
+                     value="Attribute Analysis[COMMENT: player overview; title for a panel showing an attribute analyisis diagram]"/>
+    </widget>
+
+    <!--Grafico-->
+    <widget file="player/kojuro/analyser panels/player attribute analyser dna panel" id="paAdna" class="client_object_viewer_xml_panel"
+            late_loading="true">
+            <widget class="text" alignment="left,centre_y" font="title" auto_size="vertical">
+              <translation id="text" type="use" value="DNA" />
+             </widget>
+        <translation id="title" type="use" value="DNA"/>
+    </widget>
+
+    <!--  Biografia-->
+    <widget class="person_history_biography_panel" id="phb1" file="person/person history biography no title"
+            late_loading="true">
+        <translation id="title" translation_id="295868" type="use"
+                     value="Biography[COMMENT: player history panel; title of biography titled box]"/>
+    </widget>
+
+    <widget class="player_positions_indicator_panel" id="ppi1" file="player/kojuro/components/big/player positions" navigation_container="true" default_focus="true">
+      <record id="object_property" get_property="objt" set_property="objt"/>
+        <translation id="title" translation_id="230082" type="use" value="Positions"/>
+    </widget>
+
+    <!--Comparação-->
+    <widget class="player_scout_reports_panel" id="pscR" file="player/kojuro/components/big/comparison panel"
+            late_loading="true">
+        <translation id="title" translation_id="248428" type="use" value="Comparison"/>
+    </widget>
+
+    <widget class="playing_history_summary_panel" file="player/playing history summary small" id="Pcrs"
+            late_loading="true">
+        <translation id="title" translation_id="247605" type="use" value="Career Stats"/>
+    </widget>
+
+    <!--  Pros e contras-->
+    <widget class="player_scout_reports_panel" id="srp1" file="player/kojuro/components/big/pros cons"
+            late_loading="true">
+        <translation id="title" type="use" value="Pro/Cons"/>
+    </widget>
+
+    <widget class="player_additional_stats_panel" id="staP" file="player/player additional stats mini report">
+      <record id="object_property" get_property="objt" set_property="objt" />
+      <translation id="title" translation_id="385617" type="use" value="Season Stats[COMMENT: player overview; player stats by competition panel title]" />
+    </widget>
+
+ </panel>

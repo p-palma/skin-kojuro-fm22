@@ -1,0 +1,25 @@
+<panel>
+  <layout class="stick_to_sides_attachment" alignment="all" apply_to_children="true" inset="0"/>
+
+  <container class="main_box" id="at77">
+      <layout class="arrange_vertical_attachment" layout="96,-1" offset="0" gap="5"/>
+      <layout class="stick_to_sides_attachment" alignment="horizontal" inset="0"
+              apply_to_children="true"/>
+
+      <widget class="club_overview_team_results_panel" id="cotr">
+          <record id="object_property">
+              <integer id="get_property" value="objt"/>
+              <integer id="set_property" value="objt"/>
+          </record>
+      </widget>
+
+      <widget class="fixtures_list_panel" id="flpn" file="match/fixtures list panel mini">
+          <record id="object_property">
+              <integer id="get_property" value="Tftm"/>
+              <integer id="set_property" value="objt"/>
+          </record>
+      </widget>
+
+  </container>
+
+</panel>

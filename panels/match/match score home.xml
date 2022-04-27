@@ -1,0 +1,43 @@
+﻿<!-- Home Score Name - Logo Layout with team colours -->
+<panel colour_team_names="false" >	<!-- set to false to turn off team text colour -->
+
+<!-- this controls the background graphic, delete the id part to stop it using the team colour then change the red/blue replacement colours to suit -->
+<widget class="picture" id="T1Co" auto_size="vertical" file="boxes/custom/match/tv captions/si tv/score/home team/paper"
+	cached="true" rthr="68" alignment="centre" red_replacement="matchscorekojuro" blue_replacement="bg accent" green_replacement="bg alert">
+<layout class="stick_to_sides_attachment" alignment="horizontal" inset="0" />
+<layout class="centre_in_parent_attachment" alignment="vertical" />
+</widget>
+
+<container>
+
+	<!-- layout - logo, name container widths -->
+	<layout class="arrange_horizontal_attachment" layout="30,-1" gap="0" offset="0"/>
+	<layout class="stick_to_sides_attachment" alignment="vertical" apply_to_children="true" inset="0"/>
+	<layout class="stick_to_sides_attachment" alignment="all" inset="0"/>
+
+	<!-- Team Logo Container -->
+	<container>
+		<!-- To move to left change alignment from right to left -->
+		<layout class="stick_to_sides_attachment" alignment="right" inset="15" />
+		<widget class="match_team_logo_picture" id="TeLo" image_alignment="centre" scale_picture="true" keep_aspect_ratio="true" alignment="centre">
+			<layout class="stick_to_sides_attachment" alignment="all" inset="5,0,5,0" />
+		</widget>
+	</container>
+
+	<!-- Team Kit Container - Disabled by default, if you want kits instead of logo remove logo container above and un-commet out the below container -->
+	<!-- <container>
+	<layout class="stick_to_sides_attachment" alignment="left" inset="15" />
+	<widget class="kit_picture" id="teKP" image_alignment="centre" scale_picture="true" keep_aspect_ratio="true" alignment="centre">
+	<layout class="stick_to_sides_attachment" alignment="all" inset="5,0,5,0" />
+	</widget>
+	</container> -->
+
+	<!-- This is the code for the team name, the id is what sets the teamname type, if team names colours set to false at top of file colour is set here -->
+	<widget class="text" id="mitn" font="bundesliga" auto_size="all" alignment="right,centre_y" multiline="true" colour="bg" >
+	<!-- If changing alignment above from right to left swap the 50/0 values as need the right inset, if swapping to centre_x set 50 to 0. Inset order is top,left,bottom,right -->
+	<layout class="stick_to_sides_attachment" alignment="all" inset="0,0,0,50" />
+	</widget>
+
+</container>
+
+</panel>

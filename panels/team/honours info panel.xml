@@ -1,0 +1,35 @@
+<panel width="180">
+	<layout class="arrange_vertical_attachment" layout="-1" offset="2" gap="8"/>
+	<layout class="stick_to_sides_attachment" alignment="horizontal" apply_to_children="true" inset="2"/>
+
+
+	<container class="plain_box" red_replacement=" ">
+		<layout class="arrange_horizontal_attachment" layout="-1,-1"  offset="0"/>
+		<layout class="stick_to_sides_attachment" alignment="vertical" apply_to_children="true"/>
+
+		<container>
+		<layout class="stick_to_sides_attachment" alignment="all" apply_to_children="true" inset="0"/>
+
+		<widget class="picture" id="" file="pictures/trophies/default/shadow" image_alignment="centre_x,centre_y" scale_picture="true" keep_aspect_ratio="true">
+			<layout class="stick_to_sides_attachment" alignment="all" inset="0" />
+		</widget>
+
+		<widget class="object_portrait_picture" id="trop" scale_picture="true" >
+			<integer id="property" value="trop"/>
+			<boolean id="keep_aspect_ratio" value="true"/>
+			<boolean id="comp_use_trophy_icon" value="true"/>
+			<flags id="image_alignment" value="centre_x,centre_y"/>
+			<layout class="stick_to_sides_attachment" alignment="vertical" inset="0"/>
+		</widget>
+
+		</container>
+
+		<container>
+		<layout class="arrange_vertical_attachment" layout="30,-1" offset="0" />
+		<layout class="stick_to_sides_attachment" alignment="horizontal"  apply_to_children="true"/>
+		<widget class="text" id="wcnt" alignment="centre_x,bottom" size="xxlarge" colour="baise" style="bold" auto_size="vertical" />
+		<widget class="text" id="cmpn" alignment="centre_x,top" multiline="true" size="small" colour="baise" />
+		</container>
+	</container>
+
+</panel>

@@ -1,0 +1,138 @@
+<panel>
+  <real id="segment_count" value="6" />
+  <boolean id="show_inaccurate_category" value="true" />
+  <boolean id="show_segment_values" value="true" />
+
+  <real id ="label_width_offset" value="4.0" />
+  <!-- <real id ="label_height_inset" value="0.0" /> -->
+
+  <!-- Scale the polygon to fit the widget and draw it in code -->
+  <boolean id="scale_picture" value="true" />
+  <!-- First layer colour-->
+  <record id="line_style">
+    <colour id="colour" name="fg" />
+    <real id="width" value="2" />
+  </record>
+  <!-- Second layer colour-->
+  <record id="second_colour">
+    <colour id="colour" name="fg accent" />
+    <real id="width" value="2" />
+  </record>
+  <!-- Radial lines dividing each segment -->
+  <record id="segment_divider_line_props">
+    <colour id="colour" red="100" green="100" blue="60" alpha="10" />
+    <real id="width" value="1.5" />
+  </record>
+
+  <!-- Style of the line around the edge of the polygon -->
+  <record id="polygon_edge_line_props">
+    <colour id="colour" red="40" green="160" blue="200" alpha="160" />
+    <real id="width" value="0.8" />
+  </record>
+
+  <!-- Colours (and number) of the concentric polygon rings -->
+  <list id="ring_colours">
+    <colour red="100" green="100" blue="120" alpha="100"/>
+    <colour red="100" green="100" blue="120" alpha="85"/>
+    <colour red="100" green="100" blue="120" alpha="70"/>
+    <colour red="100" green="100" blue="120" alpha="55"/>
+    <colour red="100" green="100" blue="120" alpha="40"/>
+  </list>
+
+  <list id="items">
+    <!-- layer 1 (there is only one) -->
+    <list>
+
+      <!-- Compostura -->
+      <record id="item">
+        <translation id="name" translation_id="227914" type="use" value="Compostura" />
+        <real id="max_value" value="20" />
+        <integer id="angle" value="0" />
+        <colour id="colour" name="text" />
+        <flags id="standard_spec" value="text" />
+        <flags id="size" value="small" />
+
+        <list id="attributes">
+          <integer value="Pcmp" />
+          <!-- composure -->
+        </list>
+      </record>
+
+      <!-- Concentração -->
+      <record id="item">
+        <translation id="name" translation_id="227916" type="use" value="Concentração" />
+        <real id="max_value" value="20" />
+        <integer id="angle" value="60" />
+        <colour id="colour" name="text" />
+        <flags id="standard_spec" value="text" />
+        <flags id="size" value="small" />
+
+        <list id="attributes">
+          <integer value="Pcnt" />
+          <!-- concentration -->
+        </list>
+      </record>
+
+      <!-- Decisões -->
+      <record id="item">
+        <translation id="name" translation_id="227801" type="use" value="Decisões" />
+        <real id="max_value" value="20" />
+        <integer id="angle" value="120" />
+        <colour id="colour" name="text" />
+        <flags id="standard_spec" value="text" />
+        <flags id="size" value="small" />
+
+        <list id="attributes">
+          <integer value="Pdec" />
+          <!-- decisions -->
+        </list>
+      </record>
+
+      <!-- Determinação -->
+      <record id="item">
+        <translation id="name" translation_id="227803" type="use" value="Determination" />
+        <real id="max_value" value="20" />
+        <integer id="angle" value="180" />
+        <colour id="colour" name="text" />
+        <flags id="standard_spec" value="text" />
+        <flags id="size" value="small" />
+        <list id="attributes">
+          <integer value="Pdet" />
+          <!-- determination -->
+        </list>
+      </record>
+
+      <!-- Indice de Trabalho -->
+      <record id="item">
+        <translation id="name" translation_id="227911" type="use" value="Indice de Trabalho" />
+        <real id="max_value" value="20" />
+        <integer id="angle" value="240" />
+        <colour id="colour" name="text" />
+        <flags id="standard_spec" value="text" />
+        <flags id="size" value="small" />
+
+        <list id="attributes">
+          <integer value="Pwkr" />
+          <!-- (m) work rate -->
+        </list>
+      </record>
+
+      <!-- Trabalho em Equipa -->
+      <record id="item">
+        <translation id="name" translation_id="227909" type="use" value="Teamwork" />
+        <real id="max_value" value="20" />
+        <integer id="angle" value="300" />
+        <colour id="colour" name="text" />
+        <flags id="standard_spec" value="text" />
+        <flags id="size" value="small" />
+
+        <list id="attributes">
+        <integer value="Ptwr" />
+          <!-- teamwork -->
+        </list>
+      </record>
+
+    </list>
+  </list>
+  <!-- outfield analyser panel -->
+</panel>

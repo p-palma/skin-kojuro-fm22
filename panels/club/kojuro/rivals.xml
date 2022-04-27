@@ -1,0 +1,67 @@
+<panel>
+  <layout class="stick_to_sides_attachment" alignment="all" apply_to_children="true" inset="0"/>
+
+
+  <container class="vertical_adaptive_container" mode="dont_distribute" default_width="-1" default_height="-1">
+    <translation id="title" translation_id="364723" type="use" value="Rivalries[COMMENT: FR 8168 - title for a box containing info on a club's rivals]" />
+
+    <container class="scrolling_box" default_height="-1">
+      <container>
+        <attachment_group class="horizontal_arrange_vertical_autosize" horizontal_alignment="fill" horizontal_offset="0" horizontal_gap="20" vertical_inset="0" />
+
+        <container>
+          <attachment_group class="vertical_arrange_autosize" alignment="top,extend"/>
+          <widget class="label" id="TDeL"  auto_size="vertical" alignment="centre_x,top,can_scale">
+            <record id="object_property" name="true">
+              <string id="get_property" value="TDer" />
+            </record>
+            <string id="font" value="label" />
+          </widget>
+
+          <widget class="team_derbies_text" id="TDeV" alignment="centre_x,centre_y"  auto_size="all">
+            <record id="object_property">
+              <string id="get_property" value="TDer" />
+            </record>
+          </widget>
+
+        </container>
+
+        <container>
+          <attachment_group class="vertical_arrange_autosize" alignment="top,extend" horizontal_offset="0" vertical_gap="0" vertical_inset="0" />
+          <widget class="label" id="CfmL" auto_size="vertical"  alignment="centre_x,top,can_scale">
+            <record id="object_property" name="true">
+              <string id="get_property" value="Cfmr" />
+            </record>
+            <string id="font" value="label" />
+          </widget>
+          <widget class="club_rivalries_list_text" id="CfmV" alignment="centre_x,centre_y" auto_size="vertical" >
+            <record id="object_property">
+              <string id="get_property" value="Cfmr" />
+            </record>
+          </widget>
+        </container>
+
+      </container>
+    </container>
+
+    <container class="scrolling_box" default_height="-1">
+        <container>
+          <attachment_group class="vertical_arrange_autosize" alignment="top,centre"/>
+          <widget class="label" id="CfrL"  auto_size="vertical" alignment="centre_x,top,can_scale">
+            <record id="object_property" name="true">
+              <string id="get_property" value="Cfrt" />
+            </record>
+            <string id="font" value="label" />
+          </widget>
+          <widget class="club_rivalries_list_text" id="CfrV" alignment="centre_x,centre_y"  auto_size="vertical">
+            <record id="object_property">
+              <string id="get_property" value="Cfrt" />
+            </record>
+          </widget>
+      </container>
+    </container>
+
+  </container>
+
+
+</panel>

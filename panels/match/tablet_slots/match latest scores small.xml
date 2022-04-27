@@ -1,0 +1,34 @@
+<panel>
+	<list id="properties_to_forward">
+		<record get_property="hcmb" target="mlsc" set_property="hidn"/>
+	</list>
+	
+	<flags id="MLSs" value="true"/>
+	<boolean id="save_immediate_state" value="true"/>
+
+	<layout class="arrange_vertical_attachment" alignment="top,extend" offset="0"/>
+	<layout class="stick_to_sides_attachment" alignment="horizontal" apply_to_children="true"/>
+
+	<container id="btns">
+
+		<layout class="stick_to_sides_attachment" alignment="left,top" inset="0" apply_to_children="true"/>
+		<layout class="fit_children_attachment" alignment="vertical" offset="0"/>
+
+		<widget class="view_menu_popup" id="mlsc" auto_tick_exclusive="true" save_session_state="true" embed_in_frame="false">
+
+		</widget>
+
+	</container>
+
+	<widget class="table" id="mlst" mode="fill_rows" auto_size_rows="true" fixed_size_rows="false" layout="-1, 10, 35, 10, -1, 35, 20" row_spacing="0">
+		<record id="default_properties" size="normal">
+			<integer id="auto_size_minimum_height" value="20"/>
+		</record>
+
+		<list id="column_widget_properties">
+			<record indx="2" style="bold" size="normal"/>
+			<record indx="6" show_button_appearance="false"/>
+		</list>
+	</widget>
+
+</panel>

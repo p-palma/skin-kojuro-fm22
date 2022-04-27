@@ -1,0 +1,53 @@
+<panel>
+  <layout class="horizontal_arrange" horizontal_layout="-1,-1,-1,-1"/>
+
+  <!-- Manager -->
+  <container class="plain_box">
+    <layout class="vertical_arrange" vertical_layout="10,-1"/>
+    <widget class="label" size="7" font="title" alignment="centre_x,centre_y">
+      <translation id="text" translation_id="227981" type="use" value="Manager"/>
+    </widget>
+    <widget class="person_snapshot_club_overview_panel" id="mana" file="club/wannachup/staff player face">
+      <record id="object_property">
+        <integer id="get_property" value="TMnR"/>
+        <integer id="set_property" value="objt"/>
+      </record>
+    </widget>
+  </container>
+  <!-- Captain -->
+  <container class="plain_box">
+    <layout class="vertical_arrange" vertical_layout="10,-1"/>
+    <widget class="label" size="7" font="title" alignment="centre_x,centre_y">
+      <translation id="text" translation_id="300013" type="use" value="Captain"/>
+    </widget>
+    <widget class="person_snapshot_club_overview_panel" id="capt" file="club/wannachup/staff player face">
+      <record id="object_property">
+        <integer id="get_property" value="TCap"/>
+        <integer id="set_property" value="objt"/>
+      </record>
+    </widget>
+  </container>
+
+  <!-- Key Player -->
+  <container class="plain_box">
+    <layout class="vertical_arrange" vertical_layout="10,-1"/>
+    <widget class="label" size="7" font="title" alignment="centre_x,centre_y">
+      <translation id="text" translation_id="227396" type="use" value="Key Player"/>
+    </widget>
+    <widget class="person_snapshot_club_overview_panel" id="KeyP" file="club/wannachup/staff player face">
+      <record id="object_property">
+        <integer id="get_property" value="TKpL"/>
+        <integer id="set_property" value="objt"/>
+      </record>
+    </widget>
+  </container>
+  <!-- Prospect -->
+  <container class="plain_box">
+    <layout class="vertical_arrange" vertical_layout="10,-1"/>
+    <widget class="label" size="7" font="title" alignment="centre_x,centre_y">
+      <translation id="text" translation_id="227404" type="use" value="Hot Prospect"/>
+    </widget>
+    <widget class="person_snapshot_club_overview_panel" id="HotP" file="club/wannachup/staff player face"/>
+  </container>
+
+</panel>

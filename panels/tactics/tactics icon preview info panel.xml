@@ -1,0 +1,119 @@
+<panel>
+    <attachment_group class="horizontal_arrange_vertical_centre" horizontal_alignment="middle"/>
+
+    <container>
+
+        <attachment class="test_screen_size_attachment" skip_if_false="true">
+            <list id="properties">
+                <record>
+                    <flags id="alignment" value="vertical"/>
+                    <integer id="min_value" value="0"/>
+                    <integer id="max_value" value="850"/>
+                    <!-- This is a very large value as we want our widget to show if > the min_value.  The attachmen itself only does values between a range so we set the max arbitrarily high to make this work -->
+                    <symbol id="set_property" value="height"/>
+                    <integer id="true_value" value="55"/>
+                    <integer id="false_value" value="65"/>
+                </record>
+                <record>
+                    <flags id="alignment" value="vertical"/>
+                    <integer id="min_value" value="851"/>
+                    <integer id="max_value" value="950"/>
+                    <!-- This is a very large value as we want our widget to show if > the min_value.  The attachmen itself only does values between a range so we set the max arbitrarily high to make this work -->
+                    <symbol id="set_property" value="height"/>
+                    <integer id="true_value" value="65"/>
+                    <integer id="false_value" value="65"/>
+                </record>
+                <record>
+                    <flags id="alignment" value="vertical"/>
+                    <integer id="min_value" value="951"/>
+                    <integer id="max_value" value="10000"/>
+                    <!-- This is a very large value as we want our widget to show if > the min_value.  The attachmen itself only does values between a range so we set the max arbitrarily high to make this work -->
+                    <symbol id="set_property" value="height"/>
+                    <integer id="true_value" value="75"/>
+                    <integer id="false_value" value="65"/>
+                </record>
+
+                <record>
+                    <flags id="alignment" value="horizontal"/>
+                    <integer id="min_value" value="0"/>
+                    <integer id="max_value" value="1200"/>
+                    <!-- This is a very large value as we want our widget to show if > the min_value.  The attachmen itself only does values between a range so we set the max arbitrarily high to make this work -->
+                    <symbol id="set_property" value="width"/>
+                    <integer id="true_value" value="75"/>
+                    <integer id="false_value" value="80"/>
+                </record>
+                <record>
+                    <flags id="alignment" value="horizontal"/>
+                    <integer id="min_value" value="1201"/>
+                    <integer id="max_value" value="1366"/>
+                    <!-- This is a very large value as we want our widget to show if > the min_value.  The attachmen itself only does values between a range so we set the max arbitrarily high to make this work -->
+                    <symbol id="set_property" value="width"/>
+                    <integer id="true_value" value="90"/>
+                    <integer id="false_value" value="80"/>
+                </record>
+                <record>
+                    <flags id="alignment" value="horizontal"/>
+                    <integer id="min_value" value="1367"/>
+                    <integer id="max_value" value="10000"/>
+                    <!-- This is a very large value as we want our widget to show if > the min_value.  The attachmen itself only does values between a range so we set the max arbitrarily high to make this work -->
+                    <symbol id="set_property" value="width"/>
+                    <integer id="true_value" value="110"/>
+                    <integer id="false_value" value="80"/>
+                </record>
+            </list>
+        </attachment>
+
+
+        <layout class="arrange_vertical_attachment" layout="-1,20" offset="0" gap="0"/>
+        <layout class="stick_to_sides_attachment" alignment="horizontal" inset="0" apply_to_children="true"/>
+        <!-- This animation isn't a normal position animation as it gets triggered in code with specfic values-->
+
+        <container>
+
+            <!-- Player picture -->
+            <widget class="object_portrait_picture" id="pict" scale_picture="true" image_alignment="center,bottom">
+                <layout class="stick_to_sides_attachment" alignment="vertical" inset="0"/>
+                <layout class="stick_to_sides_attachment" alignment="horizontal" inset="0"/>
+
+                <record id="object_property">
+                    <integer id="get_property" value="objt"/>
+                    <integer id="set_property" value="objt"/>
+                </record>
+            </widget>
+
+            <!-- captain icon-->
+            <widget class="picture" id="capi" scale_picture="true" file="icons/16px/captain" hidden="true" width="16"
+                    height="16">
+                <layout class="stick_to_sides_attachment" alignment="right" inset="0"/>
+                <layout class="stick_to_sides_attachment" alignment="top" inset="18"/>
+            </widget>
+
+            <!-- Icons (Injury, star player etc)-->
+            <container id="icoC" height="16" width="16" class="main_contrast_box_no_margin" red_replacement="bg accent">
+                <layout class="stick_to_sides_attachment" alignment="top" inset="0" apply_to_children="true"/>
+                <layout class="arrange_horizontal_attachment" alignment="right" offset="0" gap="2"/>
+                <layout class="stick_to_sides_attachment" alignment="top" inset="0"/>
+                <layout class="stick_to_sides_attachment" alignment="right" inset="0"/>
+
+                <record id="default_properties" image_alignment="centre" hidden="true" width="16" height="16"/>
+
+                <widget class="picture" id="PTgs" file="icons/16px/goal" red_replacement="white"/>
+                <widget class="picture" id="PTas" file="icons/16px/assist" red_replacement="white"/>
+                <widget class="picture" id="PTrt" file="icons/16px/key player"/>
+                <widget class="picture" id="PNba" file="icons/16px/yellow card"/>
+                <widget class="picture" id="PHNO" file="icons/16px/debut"/>
+            </container>
+
+        </container>
+
+        <!-- Name -->
+        <container class="main_box" id="nmcn" appearance="boxes/custom/match/lineup pitch icon/bottom/paper"
+                   height="20">
+            <layout class="stick_to_sides_attachment" alignment="all" inset="0" apply_to_children="true"/>
+
+            <widget class="label" id="name" size="7" alignment="centre" auto_size="vertical" multiline="false"
+                    font="tad"/>
+        </container>
+
+    </container>
+</panel>

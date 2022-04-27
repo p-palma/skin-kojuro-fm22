@@ -1,0 +1,91 @@
+<?xml version='1.0' encoding='utf-8'?>
+<panel>
+  <layout class="stick_to_sides_attachment" alignment="all" apply_to_children="true" inset="0" />
+
+<container class="vertical_adaptive_container" inset="0" offset="0" gap="0" priority="1" default_width="-450">
+  <container class="main_subtle_box" appearance="boxes/custom/standard/paper" red_replacement="woz_bg" blue_replacement="woz_3rd" default_height="-1" priority="2">
+    <layout class="arrange_vertical_attachment" layout="50,-1" offset="0"/>
+    <layout class="stick_to_sides_attachment" alignment="all" inset="0" apply_to_children="true"/>
+
+    <container class="wannachup_roundtransparent" draw_vertical_dividers="false">
+      <layout class="stick_to_sides_attachment" alignment="vertical" apply_to_children="true"/>
+      <layout class="arrange_horizontal_attachment" layout="-1,5,-1" gap="0"/>
+
+      <!-- 3 CA/CP -->
+      <container>
+        <attachment class="horizontal_arrange" horizontal_layout="-1,-1"/>
+
+        <container>
+          <attachment class="horizontal_arrange" horizontal_layout="-1,-1"/>
+
+          <widget class="label" font="title" alignment="left,centre_y">
+            <translation id="text" translation_id="314426" type="use" value="Ability[COMMENT: player popup info panel - scout current ability rating]"/>
+          </widget>
+
+          <!--CA-->
+
+          <widget class="scout_stars_label" id="cast" alignment="right, centre_y" mode="1">
+            <record id="object_property" get_property="Pcab"/>
+          </widget>
+
+          <!--no CA-->
+          <widget class="text" id="noca" height="20" spec="text" colour="text" alignment="right, centre_y" hidden="true">
+            <translation id="text" translation_id="242522" type="use" value="N/A"/>
+          </widget>
+
+        </container>
+
+      </container>
+
+      <container width="5" priority="1" gap="0"/>
+
+      <!-- 1 CA/CP -->
+      <container>
+        <attachment class="horizontal_arrange" horizontal_layout="-1,-1"/>
+
+        <container>
+          <attachment class="horizontal_arrange" horizontal_layout="-1,-1"/>
+
+          <widget class="text" font="title" alignment="left,centre_y">
+            <translation id="text" translation_id="314427" type="use" value="Potential[COMMENT: player popup info panel - scout potential ability rating]"/>
+          </widget>
+
+          <!--PA-->
+          <widget class="scout_stars_label" id="past" alignment="right, centre_y" mode="2">
+            <record id="object_property" get_property="Ppab"/>
+          </widget>
+
+          <!--no PA-->
+          <widget class="text" id="nopa" height="20" spec="text" colour="text" alignment="right, centre_y" hidden="true">
+            <translation id="text" translation_id="242522" type="use" value="N/A"/>
+          </widget>
+
+        </container>
+
+      </container>
+
+
+    </container>
+
+    <!-- Scout -->
+    <container class="player_scout_reports_panel" file="none" height="150" priority="1">
+
+      <layout class="arrange_vertical_attachment" alignment="top,extend" offset="0" gap="1"/>
+      <layout class="stick_to_sides_attachment" alignment="horizontal" inset="10" apply_to_children="true"/>
+      <record id="object_property" get_property="objt" set_property="objt"/>
+
+      <!-- +/- -->
+      <container >
+        <layout class="stick_to_sides_attachment" alignment="all" inset="0" apply_to_children="true"/>
+        <layout class="arrange_horizontal_attachment" alignment="fill" offset="0"/>
+
+        <widget class="player_scout_reports_panel" id="psrp" file="player/kojuro/components/small/pros cons"/>
+
+      </container>
+
+    </container>
+
+  </container>
+</container>
+
+</panel>

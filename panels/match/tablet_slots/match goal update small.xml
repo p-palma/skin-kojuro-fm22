@@ -1,0 +1,35 @@
+<panel>
+
+	<flags id="MGUs" value="true"/>
+
+	<layout class="arrange_vertical_attachment" alignment="top,extend" offset="0"/>
+	<layout class="stick_to_sides_attachment" alignment="horizontal" apply_to_children="true"/>
+
+	<widget class="table" id="mlst" mode="fill_rows, stripe_rows" auto_size_rows="false" layout="16, -1, 18, 5, 18, -1, -1" fixed_size_rows="true">
+
+		<!-- set the colum properties -->
+		<list id="column_widget_properties">
+			<record index="0" alignment="centre" />
+			<record index="1" alignment="right,centre_y" />
+			<record index="2" alignment="right,centre_y" />
+			<record index="3" alignment="centre, centre_y" />
+			<record index="4" alignment="left,centre_y" />
+			<record index="5" alignment="left,centre_y" />
+			<record index="6" alignment="right,centre_y"/>
+		</list>
+
+		<record id="default_properties" size="small"/>
+
+		<list id="column_table_properties">
+			<record index="0" id="m_it" top="2" bottom="2"/>
+			<record index="1" id="m_t1"/>
+			<record index="2" id="m_s1"/>
+			<record index="3" id="m_dv"/>
+			<record index="4" id="m_s2"/>
+			<record index="5" id="m_t2"/>
+			<record index="6" id="m_pt"/>
+		</list>
+
+	</widget>
+
+</panel>

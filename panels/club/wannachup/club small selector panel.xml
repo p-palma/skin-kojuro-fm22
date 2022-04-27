@@ -1,0 +1,32 @@
+<panel>
+  <container class="wannachup_round" id="SUBP">
+    <layout class="stick_to_sides_attachment" alignment="all" apply_to_children="true" inset="0"/>
+    <layout class="stick_to_sides_attachment" alignment="all" inset="0"/>
+  </container>
+  <widget class="popup_button" id="popv" auto_size="horizontal" height="20" click_event="msis" appearance="buttons/custom/customise panel/button" fixed="true">
+    <layout class="stick_to_sides_attachment" alignment="right,top" inset="8,4"/>
+  </widget>
+  <widget class="club_league_history_graph" id="clhg">
+    <translation id="title" translation_id="319446" type="use" value="League History[COMMENT: title for the league position history on the club overview panel]"/>
+  </widget>
+  <widget class="team_container_overview_teams_panel" id="tcot">
+    <translation id="title" translation_id="229362" type="use" value="Teams"/>
+  </widget>
+  <widget class="team_transfer_snapshot_panel" id="Tran" valid_for_fmc="false">
+    <translation id="title" translation_id="296337" type="use" value="Pending Transfers"/>
+  </widget>
+  <widget class="team_container_information_background_panel" id="Cbac">
+    <translation id="title" translation_id="333728" type="use" value="Club Background[COMMENT: title for panel showing a club's background]"/>
+  </widget>
+  <widget class="finances_short_wage_summary_panel" id="fina" default_item="true">
+    <translation id="title" translation_id="329952" type="use" value="Finance &amp; Salary[COMMENT: manager snapshot/home: wage &amp; finances summary panel heading]"/>
+    <record id="object_property">
+      <integer id="get_property" value="objt"/>
+      <integer id="set_property" value="objt"/>
+    </record>
+  </widget>
+  <widget class="club_overview_team_results_panel" id="rafp" file="club/wannachup/results and fixtures" section="TeFi">
+    <translation id="title" translation_id="319447" type="use" value="Results[COMMENT: title for the previous set of first team results on the club overview panel]"/>
+    <record id="object_property" get_property="objt" set_property="objt"/>
+  </widget>
+</panel>

@@ -1,0 +1,36 @@
+<?xml version='1.0' encoding='utf-8'?>
+<record>
+
+	<!--
+	 ============================================================
+	 Basic Skin Details
+
+	 The commands in this file are only used to describe the skin.
+	 Settings should be placed in the file "skins/<skin>/settings/<skin> settings.xml",
+	 where <skin> is the name of the skin.
+
+	 $DateTime: 2013/10/11 08:42:01 $
+	 ============================================================
+	 -->
+
+	<!-- skin details -->
+	<translation id="name" value="Kojuro v4.0.0" />
+	<translation id="skin_name" value="Kojuro-v4.0.0" />
+	<string id="author" value="KojuroPP" />
+	<string id="description" value="FM22 Skin by KojuroPP"/>
+	<string id="version" value="4.0.0" />
+	<flags id="parent" value="fm" />
+
+	<!--
+	 Minimum game version this skin requires to be valid, and listed as an option in the list of skins .
+
+	 This is used for two things:
+	 - F irst of all you can force a sking to only be availble for a minimum minor release (ie patch), in other words
+	 setting the required_version to 7.0.1 makes sure the skin won't be listed if the game is in version 7.0.0.
+	 - Secondly, the first number ("major version") is used to decide which version the skin was designed for,
+	 so if the version is "7.0.0" it won't be listed in the list of skins if the game version is "6.0.0." or "8.0.0",
+	 even though 7 is less than 8.
+	 -->
+	<string id="required_version" value="22.0.0" />
+
+</record>

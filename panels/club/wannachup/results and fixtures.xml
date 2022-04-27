@@ -1,0 +1,34 @@
+<panel>
+  <attachment class="vertical_arrange" vertical_layout="-1,-1" vertical_gap="4"/>
+  <container>
+    <layout class="stick_to_sides_attachment" apply_to_children="true"/>
+    <widget class="label" alignment="centre" id="nofi">
+      <translation id="text" translation_id="319451" type="use" value="No recent fixtures played.[COMMENT: club overview team results panel; text indicating that because no fixtures have been played, there is no expected screen content]"/>
+    </widget>
+    <container id="fixt">
+      <attachment class="horizontal_arrange" horizontal_layout="-1,-1,-1,-1,-1" horizontal_gap="4"/>
+      <record id="default_properties" file="club/wannachup/club results widget"/>
+      <container class="client_object_viewer_xml_panel" id="res0"/>
+      <container class="client_object_viewer_xml_panel" id="res1"/>
+      <container class="client_object_viewer_xml_panel" id="res2"/>
+      <container class="client_object_viewer_xml_panel" id="res3"/>
+      <container class="client_object_viewer_xml_panel" id="res4"/>
+    </container>
+  </container>
+  <container class="competition_news_side_panel" file="none">
+    <layout class="stick_to_sides_attachment" apply_to_children="true"/>
+    <record id="object_property" get_property="objt" set_property="objt"/>
+    <container id="nofx" class="wannachup_roundsemi">
+      <layout class="stick_to_sides_attachment" apply_to_children="true"/>
+      <widget class="text" alignment="centre" colour="faded text" hidden="false">
+        <layout class="stick_to_sides_attachment" alignment="all"/>
+        <translation id="text" translation_id="298048" type="use" value="No upcoming fixtures."/>
+      </widget>
+    </container>
+    <widget class="simple_data_list" id="fix1" first="0" maximum_items="5" set_property="objt">
+      <attachment class="horizontal_arrange" horizontal_layout="-1,-1,-1,-1,-1" horizontal_gap="4"/>
+      <record id="object_property" get_property="objt" set_property="objt"/>
+      <record id="widget_properties" class="team_upcoming_fixture_widget" file="club/wannachup/club fixtures widget"/>
+    </widget>
+  </container>
+</panel>

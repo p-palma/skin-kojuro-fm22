@@ -1,0 +1,83 @@
+<panel>
+  <layout class="stick_to_sides_attachment" alignment="all" apply_to_children="true" inset="0"/>
+  <container class="wannachup_roundthin" draw_horizontal_dividers="false">
+    <layout class="stick_to_sides_attachment" alignment="horizontal" apply_to_children="true"/>
+    <layout class="arrange_vertical_attachment" layout="-1,-1,-1,-1" gap="0"/>
+    <!-- 1 -->
+    <container class="wannachup_roundsemi">
+      <attachment class="horizontal_arrange" horizontal_layout="-4,-3"/>
+      <container>
+        <attachment class="vertical_arrange" vertical_layout="-1,-1"/>
+        <widget class="label" font="title" alignment="left,centre_y">
+          <translation id="text" translation_id="319581" type="use" value="Professional Status[COMMENT: club properties; prefix text indicating what status the club holds eg professional, semi-professional, amateur]" />
+        </widget>
+        <container/>
+      </container>
+      <container>
+        <attachment class="vertical_arrange" vertical_layout="-1,-1"/>
+        <widget class="professional_status_label" alignment="right,centre_y">
+          <record id="object_property" get_property="Cprs"/>
+        </widget>
+        <container/>
+      </container>
+    </container>
+    <!-- 2 -->
+    <container class="wannachup_roundtransparent">
+      <attachment class="horizontal_arrange" horizontal_layout="-4,-3"/>
+      <container>
+        <attachment class="vertical_arrange" vertical_layout="-1,-1"/>
+        <widget class="label" font="title" alignment="left,centre_y">
+          <translation id="text" translation_id="227963" type="use" value="Reputation" />
+        </widget>
+        <container/>
+      </container>
+      <container>
+        <attachment class="vertical_arrange" vertical_layout="-1,-1"/>
+        <widget class="club_reputation_stars_label" alignment="right,centre_y">
+          <record id="object_property" get_property="Csta"/>
+        </widget>
+        <widget class="reputation_label" id="crep" alignment="right,centre_y">
+          <record id="object_property">
+            <integer id="get_property" value="Crsc"/>
+          </record>
+        </widget>
+      </container>
+    </container>
+    <!-- 3 -->
+    <container class="wannachup_roundsemi">
+      <attachment class="horizontal_arrange" horizontal_layout="-4,-3"/>
+      <container>
+        <attachment class="vertical_arrange" vertical_layout="-1,-1"/>
+        <widget class="label" font="title" alignment="left,centre_y">
+          <translation id="text" translation_id="243509" type="use" value="Media Prediction" />
+        </widget>
+        <container/>
+      </container>
+      <container>
+        <attachment class="vertical_arrange" vertical_layout="-1,-1"/>
+        <widget class="media_expectation_text" alignment="right,centre_y">
+          <record id="object_property" get_property="CmeD"/>
+        </widget>
+        <container/>
+      </container>
+    </container>
+    <!-- 4 -->
+    <container class="wannachup_roundtransparent">
+      <attachment class="horizontal_arrange" horizontal_layout="-4,-3"/>
+      <container>
+        <attachment class="vertical_arrange" vertical_layout="-1,-1"/>
+        <widget class="label" font="title" alignment="left,centre_y">
+          <translation id="text" translation_id="319580" type="use" value="Cont. Comp.[COMMENT: abbreviation for Continental Competition: label for showing what continental competition, if any, the club is entered in]" />
+        </widget>
+        <container/>
+      </container>
+      <container>
+        <attachment class="vertical_arrange" vertical_layout="-1,-1"/>
+        <widget class="comp_button" alignment="right,centre_y">
+          <record id="object_property" get_property="Ccon"/>
+        </widget>
+        <container/>
+      </container>
+    </container>
+  </container>
+</panel>

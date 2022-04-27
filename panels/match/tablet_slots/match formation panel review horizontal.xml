@@ -1,0 +1,18 @@
+﻿<panel>
+	<layout class="stick_to_sides_attachment" alignment="all" inset="0" apply_to_children="true" />
+	<!-- the pitch-->
+	<widget class="pitch_with_tactics" id="pwtc"
+			vertical="false"
+			pitch_draw_grass="true"
+			pitch_base_appearance=""
+			pitch_pattern="ui circles"
+			icon_flags="show_name,show_extra_details,drop_initial_if_possible"
+			allow_y_score_adjustment_for_roles="false" pitch_override_icon_size="3"
+			pitch_dont_draw_indicators="true"
+			pitch_alignment="can_scale"
+			player_icon_file="tactics/tactics icon info panel review" >
+		<integer id="line_width" value="1" />
+		<string id="pitch_line_colour" value="text" />
+	</widget>
+
+</panel>

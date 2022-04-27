@@ -1,0 +1,47 @@
+<panel>
+  <container id="SUBP">
+    <layout class="stick_to_sides_attachment" alignment="all" apply_to_children="true" inset="0" />
+    <layout class="stick_to_sides_attachment" alignment="all" inset="0" />
+  </container>
+
+  <widget class="popup_button" id="popv" auto_size="horizontal" height="0" click_event="msis" appearance="buttons/custom/wannachup customise panel/button" fixed="true">
+    <layout class="stick_to_sides_attachment" alignment="top,right" inset="0" />
+  </widget>
+
+  <!-- Make sure everything is late loading! -->
+
+  <container class="player_scout_reports_panel" file="none" id="star" late_loading="true" valid_for_unemployed_manager="true">
+    <layout class="stick_to_sides_attachment" alignment="all" apply_to_children="true" inset="0" />
+    <record id="object_property" get_property="objt" set_property="objt" />
+    <translation id="title" type="use" value="Stars" />
+
+    <container>
+      <layout class="arrange_vertical_attachment" layout="-1,-1" gap="4" offset="0" />
+      <layout class="stick_to_sides_attachment" alignment="horizontal" inset="0" apply_to_children="true" />
+      <container>
+        <layout class="arrange_horizontal_attachment" layout="-1,-1" gap="0" offset="0" />
+        <layout class="stick_to_sides_attachment" alignment="vertical" inset="0" apply_to_children="true" />
+        <container>
+          <layout class="arrange_vertical_attachment" alignment="top,extend" gap="0" offset="0" />
+          <layout class="stick_to_sides_attachment" alignment="horizontal" inset="0" apply_to_children="true" />
+          <widget class="label" alignment="centre" spec="text" colour="white" font="title">
+            <translation id="text" translation_id="293291" type="use" value="Current Ability" />
+          </widget>
+          <widget class="scout_stars_label" id="CAIC" alignment="centre" auto_size="horizontal">
+            <layout class="centre_in_parent_attachment" alignment="horizontal" />
+          </widget>
+        </container>
+        <container>
+          <layout class="arrange_vertical_attachment" alignment="top,extend" gap="0" offset="0" />
+          <layout class="stick_to_sides_attachment" alignment="horizontal" inset="0" apply_to_children="true" />
+          <widget class="label" alignment="centre" spec="text" colour="white" font="title">
+            <translation id="text" translation_id="293292" type="use" value="Potential Ability" />
+          </widget>
+          <widget class="scout_stars_label" id="PAic" alignment="centre" auto_size="horizontal">
+            <layout class="centre_in_parent_attachment" alignment="horizontal" />
+          </widget>
+        </container>
+      </container>
+    </container>
+  </container>
+</panel>

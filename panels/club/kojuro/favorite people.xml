@@ -1,0 +1,25 @@
+<panel>
+  <layout class="stick_to_sides_attachment" alignment="all" apply_to_children="true" inset="0"/>
+
+
+  <container class="vertical_adaptive_container" layout="30,-1" id="at82">
+
+    <widget class="label" id="TLeL" spec="text" size="9" alignment="centre_x,top,can_scale"
+            auto_size="vertical" font="label" colour="basegreen">
+        <record id="object_property">
+            <integer id="get_property" value="Cfap"/>
+            <boolean id="name" value="true"/>
+        </record>
+    </widget>
+
+    <widget class="person_list_text" id="Cfap" reason="false" alignment="centre_x,centre_y" size="10"
+            auto_size="vertical" font="value">
+        <record id="object_property">
+            <integer id="get_property" value="Cfap"/>
+        </record>
+    </widget>
+
+  </container>
+
+
+</panel>

@@ -1,0 +1,3 @@
+<class class="wannachup_roundtransparent" parent="bordered_box">
+	<flags id="appearance" value="wannachup/boxes/roundtransparent"/>
+</class>

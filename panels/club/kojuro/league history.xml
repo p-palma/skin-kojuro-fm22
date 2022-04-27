@@ -1,0 +1,16 @@
+<panel>
+    <layout class="stick_to_sides_attachment" alignment="vertical" inset="0" apply_to_children="true"/>
+
+    <container>
+      <translation id="title" translation_id="319446" type="use" value="League History[COMMENT: title for the league position history on the club overview panel]" />
+      <layout class="stick_to_sides_attachment" alignment="all" inset="0" apply_to_children="true" />
+
+      <widget class="club_league_history_graph" id="cloK">
+        <record id="object_property">
+          <integer id="get_property" value="objt" />
+          <integer id="set_property" value="objt" />
+        </record>
+      </widget>
+    </container>
+
+</panel>

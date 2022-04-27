@@ -1,0 +1,38 @@
+<panel>
+  <layout class="arrange_vertical_attachment" layout="-1,25" offset="0" gap="0"/>
+  <layout class="stick_to_sides_attachment" alignment="horizontal" inset="0" apply_to_children="true"/>
+  <!-- Player picture -->
+  <container>
+    <widget class="object_portrait_picture" id="pich" scale_picture="true" image_alignment="centre_x,bottom">
+      <layout class="stick_to_sides_attachment" alignment="vertical" inset="0"/>
+      <layout class="stick_to_sides_attachment" alignment="horizontal" inset="0"/>
+      <record id="object_property">
+        <integer id="get_property" value="objt"/>
+        <integer id="set_property" value="objt"/>
+      </record>
+    </widget>
+  </container>
+  <container class="inner_box" appearance="boxes/custom/match/tv captions/si tv/teams/player/paper" red_replacement="primary">
+    <attachment class="horizontal_arrange" horizontal_layout="2.16,-1" horizontal_gap="2"/>
+    <container/>
+    <widget class="squad_number_label" colour="secondary" font="title" alignment="centre,can_scale" size="8">
+      <record id="object_property">
+        <list id="get_properties">
+          <record><string id="get_property" value="Psnu"/>
+            <string id="set_property" value="valu"/>
+          </record>
+          <record>
+            <string id="get_property" value="Pers"/>
+            <string id="set_property" value="objt"/>
+          </record>
+        </list>
+      </record>
+    </widget>
+    <widget class="text" colour="secondary" font="title" person_is_player="true" alignment="centre,can_scale" size="8">
+      <record id="object_property">
+        <string id="get_property" value="Psna"/>
+        <string id="set_property" value="valu"/>
+      </record>
+    </widget>
+  </container>
+</panel>

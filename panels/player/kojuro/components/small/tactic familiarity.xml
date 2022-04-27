@@ -1,0 +1,111 @@
+﻿<panel>
+	<attachment_group class="vertical_arrange_autosize" vertical_offset="0" horizontal_inset="0"/>
+
+	<!--tactic/position selector-->
+	<container class="tactic_selector_container" id="SLco" file="none" height="25">
+		<attachment_group class="horizontal_arrange_vertical_autosize" layout="50,60" horizontal_alignment="left,extend" horizontal_offset="0" vertical_inset="0" />
+
+		<!--position selector-->
+		<widget class="popup_button" id="posS" auto_size="horizontal" appearance="buttons/custom/very subtle/button" colour="text"/>
+
+		<!--tactic selector-->
+		<widget class="popup_button" id="cTAC"  mode="3" icon="icons/16px/down" secondary_icon_enabled="false" icon_alignment="far_right" appearance="buttons/custom/very subtle/button" colour="text"/>
+	</container>
+
+	<!--familiarity-->
+	<container class="match_preparation_tactic_familiarity_panel" id="mFLV" file="none">
+
+		<attachment_group class="vertical_arrange_autosize" horizontal_alignment="horizontal" horizontal_inset="0" />
+
+		<!--bars-->
+		<container id="fami" height="340">
+			<attachment_group class="vertical_arrange_autosize" horizontal_alignment="horizontal" horizontal_inset="0" />
+
+			<record id="default_properties" file="match/match preparation tactic familiarity details" height="30" />
+
+			<container familiarity_type="0" />
+			<container familiarity_type="1" />
+			<container familiarity_type="2" />
+			<container familiarity_type="3" />
+			<container familiarity_type="4" />
+			<container familiarity_type="5" />
+			<container familiarity_type="6" />
+			<container familiarity_type="7" />
+		</container>
+	</container>
+
+	<!--overall familiarity-->
+	<container class="inner_box_no_margin" height="30">
+		<layout class="arrange_horizontal_attachment" alignment="left,extend" offset="5" gap="0" />
+		<layout class="stick_to_sides_attachment" alignment="vertical" inset="0" apply_to_children="true" />
+
+		<container class="text"  alignment="left,centre_y" auto_size="horizontal">
+			<translation id="text" translation_id="359652" type="use" value="Overall[COMMENT: league_table; use top 10 matches; category for stats relating to performance at home or away]" />
+		</container>
+
+		<container class="player_tactical_familiarity_bar" id="FMOV" file="none" width="70">
+
+			<layout class="arrange_vertical_attachment" alignment="middle" offset="0" gap="0"/>
+			<layout class="stick_to_sides_attachment" alignment="horizontal" inset="5" apply_to_children="true" />
+
+			<container class="inner_box" id="fmiL" height="12" appearance="boxes/custom/tactic fam/paper">
+				<layout class="arrange_vertical_attachment" alignment="middle" offset="0" gap="0"/>
+				<layout class="stick_to_sides_attachment" alignment="horizontal" inset="0" apply_to_children="true"/>
+
+				<container class="horizontal_stacked_bar_chart" id="stBD" height="10" wants_mouse_events="false">
+
+					<list id="colour">
+						<record value="tactical_familiarity_colour_1" />
+						<record value="tactical_familiarity_colour_2" />
+						<record value="black" />
+					</list>
+
+				</container>
+			</container>
+		</container>
+
+		<widget class="spacer" height="4"/>
+
+		<!-- feedback area -->
+		<container class="text" id="fdBK" font="label" alignment="left,centre_y">
+			<translation id="text" translation_id="356809" type="use" value="Assistant Manager Feedback[COMMENT: menu option to be able to select your assistant manager's feedback as a default panel in match options]" />
+		</container>
+	</container>
+
+	<!--debug values for tactical familiarity-->
+	<container class="collapsable_box" id="debg">
+		<string id="title" value="Debug"/>
+
+		<attachment_group class="vertical_arrange_autosize" vertical_offset="0" vertical_gap="0" horizontal_alignment="horizontal" horizontal_inset="0" />
+
+		<container class="table" id="dtfa" layout="60,40,40,40" height="115">
+
+			<list id="headings">
+				<record id="type" alignment="left,centre_y">
+					<string id="text" value="Type" />
+				</record>
+				<record id="Trai" alignment="left,centre_y">
+					<string id="text" value="Snapshot training" />
+				</record>
+				<record id="teaL" alignment="left,centre_y">
+					<string id="text" value="Team level" />
+				</record>
+				<record id="plaL" alignment="left,centre_y">
+					<string id="text" value="Player level" />
+				</record>
+			</list>
+
+			<list id="column_table_properties">
+				<record indx="0" id="type" sort_ascending="false"/>
+				<record indx="1" id="Trai" sort_ascending="false" />
+				<record indx="2" id="teaL" sort_ascending="false" />
+				<record indx="3" id="plaL" sort_ascending="false" />
+			</list>
+
+		</container>
+
+		<widget class="label" id="bleR" height="30"/>
+		<widget class="label" id="bleI" height="30"/>
+	</container>
+
+</panel>

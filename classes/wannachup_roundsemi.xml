@@ -1,0 +1,3 @@
+<class class="wannachup_roundsemi" parent="bordered_box">
+	<flags id="appearance" value="wannachup/boxes/roundsemi"/>
+</class>

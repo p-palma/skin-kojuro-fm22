@@ -1,0 +1,47 @@
+<panel navigation_container="true">
+    <container id="SUBP">
+        <layout class="stick_to_sides_attachment" alignment="all" apply_to_children="true" inset="8"/>
+        <layout class="stick_to_sides_attachment" alignment="all" inset="0"/>
+    </container>
+
+    <widget class="popup_button" id="popv" auto_size="horizontal" height="20" click_event="msis"
+            appearance="buttons/custom/customise panel/button" fixed="true">
+        <layout class="stick_to_sides_attachment" alignment="right,top" inset="12,8"/>
+    </widget>
+
+    <widget class="client_object_viewer_xml_panel" file="club/kojuro/last results" id="lastR1">
+        <translation id="title" translation_id="348841" type="use" value="Fixtures and Results[COMMENT: title for the previous set of first team results on the club overview panel]"/>
+        <record id="object_property" get_property="objt" set_property="objt"/>
+    </widget>
+
+    <widget class="client_object_viewer_xml_panel" file="club/kojuro/legends" id="leng1">
+        <translation id="title" translation_id="281393" type="use" value="Legends[COMMENT: heading; team_information_panel; list of legends persons to current club]" />
+        <record id="object_property" get_property="objt" set_property="objt"/>
+    </widget>
+
+    <widget class="client_object_viewer_xml_panel" file="club/kojuro/icons" id="icon1">
+        <translation id="title" translation_id="289355" type="use" value="Icons[COMMENT: heading; team_information_panel; list of legends persons to current club]" />
+        <record id="object_property" get_property="objt" set_property="objt"/>
+    </widget>
+
+    <widget class="client_object_viewer_xml_panel" file="club/kojuro/favorite people" id="favP1">
+        <translation id="title" translation_id="247454" type="use" value="Favoured Personnel" />
+        <record id="object_property" get_property="objt" set_property="objt"/>
+    </widget>
+
+    <widget class="client_object_viewer_xml_panel" file="club/kojuro/rivals" id="riv1">
+        <translation id="title" translation_id="364723" type="use" value="Rivalries[COMMENT: FR 8168 - title for a box containing info on a club's rivals]" />
+        <record id="object_property" get_property="objt" set_property="objt"/>
+    </widget>
+
+    <widget class="finances_short_wage_summary_panel" id="fin1">
+        <translation id="title" translation_id="316690" type="use" value="Finance[COMMENT: team landmarks; embedded menu option to switch view to Financial landmarks achieved]"/>
+        <record id="object_property" get_property="objt" set_property="objt"/>
+    </widget>
+
+    <widget class="club_league_history_graph" id="cloK">
+        <translation id="title" translation_id="319446" type="use" value="League History[COMMENT: title for the league position history on the club overview panel]" />
+      <record id="object_property" get_property="objt" set_property="objt"/>
+    </widget>
+
+  </panel>

@@ -1,0 +1,103 @@
+<?xml version='1.0' encoding='utf-8'?>
+<panel>
+	<layout class="stick_to_sides_attachment" alignment="all" apply_to_children="true" inset="0" />
+
+	<!-- PLAYER SCOUT REPORT -->
+	<container class="player_scout_reports_panel" id="psrp1" file="none">
+
+		<layout class="arrange_vertical_attachment" alignment="top,extend" offset="0" gap="0" />
+		<layout class="stick_to_sides_attachment" alignment="horizontal" inset="0" apply_to_children="true" />
+		<record id="object_property" get_property="objt" set_property="objt" />
+
+		<!-- No scout report -->
+		<container id="nsrc" class="main_box">
+			<layout class="arrange_vertical_attachment" alignment="middle" offset="0" gap="5" />
+
+			<container id="nocs" height="60">
+				<layout class="arrange_vertical_attachment" alignment="middle" offset="0" gap="5" />
+				<layout class="stick_to_sides_attachment" alignment="horizontal" inset="0" />
+
+				<!--explanatory text-->
+				<widget class="text" alignment="centre" spec="text" auto_size="vertical" size="large" style="semi_bold">
+					<layout class="stick_to_sides_attachment" alignment="horizontal" inset="0" />
+
+					<translation id="text" translation_id="297209" type="use" value="Scouting Required[COMMENT: shown when the user can't view player info without scouting them first]" />
+				</widget>
+
+			</container>
+
+			<widget id="nocn" class="label" spec="text" size="11" alignment="centre" auto_size="vertical">
+				<layout class="stick_to_sides_attachment" alignment="horizontal" inset="0" />
+			</widget>
+		</container>
+
+		<!-- Already being scounted -->
+		<container id="Arbs" class="main_box"  hidden="true">
+			<layout class="stick_to_sides_attachment" alignment="all" apply_to_children="true" inset="0" />
+
+			<!--explanatory text-->
+			<widget class="text" id="arbt" alignment="centre" spec="text" colour="attention">
+				<translation id="text" translation_id="447600" type="use" value="This player is being scouted by [%person#1] and the report will be available shortly.[COMMENT:scout report, scouting in progress]" />
+			</widget>
+		</container>
+
+		<!-- Already being scouted by pool -->
+		<container id="Pool" class="main_box"  hidden="true">
+			<layout class="stick_to_sides_attachment" alignment="all" apply_to_children="true" inset="0" />
+
+			<!--explanatory text-->
+			<widget class="text" alignment="centre" spec="text" colour="attention">
+				<translation id="text" translation_id="342085" type="use" value="Scouting In Progress[COMMENT: disabled menu item when a player is already being scouted]" />
+			</widget>
+		</container>
+
+		<container id='scou'>
+			<layout class="stick_to_sides_attachment" alignment="vertical" inset="0" apply_to_children="true" />
+			<layout class="arrange_horizontal_attachment" layout="-1,-1" inset="0" offset="0"/>
+
+			<!-- Pros icons -->
+			<container class="main_subtle_box">
+				<layout class="arrange_vertical_attachment" alignment="top,extend" offset="0" />
+				<layout class="stick_to_sides_attachment" alignment="horizontal" apply_to_children="true" inset="0" />
+
+				<container class="bordered_box" height="20" appearance="boxes/custom/teal50/paper" red_replacement="bg positive">
+					<layout class="stick_to_sides_attachment" alignment="vertical" apply_to_children="true" inset="0" />
+					<layout class="stick_to_sides_attachment" alignment="horizontal" apply_to_children="true" inset="0" />
+
+					<widget class="label" spec="text,small" alignment="centre" colour="white" size="8" font="newspaper headline">
+						<translation id="text" translation_id="361260" type="use" value="Pros[COMMENT: FR 8316 ]" />
+					</widget>
+
+				</container>
+
+				<widget class="horizontal_arrange_container" id="mpro" wrap="true" gap="1">
+					<integer id="size" value="26" />
+				</widget>
+
+			</container>
+
+			<!-- Cons icons -->
+			<container class="main_subtle_box">
+				<layout class="arrange_vertical_attachment" alignment="top,extend" offset="0" gap="4" />
+				<layout class="stick_to_sides_attachment" alignment="horizontal" apply_to_children="true" inset="0" />
+
+				<container class="bordered_box" height="20" appearance="boxes/custom/teal50/paper" red_replacement="con high">
+					<layout class="stick_to_sides_attachment" alignment="vertical" apply_to_children="true" inset="0" />
+					<layout class="stick_to_sides_attachment" alignment="horizontal" apply_to_children="true" inset="4" />
+
+					<widget class="label" spec="text,small"  alignment="centre" colour="white" size="8"  font="newspaper headline">
+						<translation id="text" translation_id="361094" type="use" value="Cons[COMMENT: FR 8316 ]" />
+					</widget>
+				</container>
+
+				<!-- Icons get inserted into here. The 'size' attribute is the size in pixels of each icon -->
+				<widget class="horizontal_arrange_container" id="mcon" wrap="true" gap="1" inset="5">
+					<integer id="size" value="26" />
+				</widget>
+			</container>
+
+		</container>
+
+	</container>
+
+</panel>

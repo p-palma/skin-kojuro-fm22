@@ -1,0 +1,7 @@
+﻿<!-- image properties -->
+<properties>
+	<!-- image slices determine the points at which the image will be sliced to enable scaling -->
+	<!-- the image will only slice in the directions slicing values are provided for-->
+	<record id="image_slices" top="480" bottom="45"/>
+	
+</properties>

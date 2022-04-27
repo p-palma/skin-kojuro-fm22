@@ -1,0 +1,97 @@
+<panel>
+  <layout class="stick_to_sides_attachment" alignment="all" apply_to_children="true" inset="0"/>
+  <container class="wannachup_roundthin" draw_horizontal_dividers="false">
+    <layout class="stick_to_sides_attachment" alignment="horizontal" apply_to_children="true"/>
+    <layout class="arrange_vertical_attachment" layout="-1,-1,-1,-1" gap="0"/>
+
+    <!-- 1 -->
+    <container class="main_subtle_box">
+      <attachment class="vertical_arrange" vertical_layout="-1,-1"/>
+      <container>
+        <attachment class="horizontal_arrange" horizontal_layout="-4,-3"/>
+        <widget class="label" font="title" alignment="left,centre_y">
+          <translation id="text" translation_id="229395" type="use" value="Training Facilities" />
+        </widget>
+        <widget class="training_facilities_stars_label" alignment="right,centre_y">
+          <record id="object_property" get_property="Ctf*"/>
+        </widget>
+      </container>
+      <container>
+        <attachment class="horizontal_arrange" horizontal_layout="-1,-4"/>
+        <container/>
+        <widget class="training_facilities_description_text" id="TfcV" alignment="right,centre_y">
+          <record id="object_property">
+            <integer id="get_property" value="Ctfs"/>
+          </record>
+        </widget>
+      </container>
+    </container>
+    <!-- 2 -->
+    <container class="wannachup_roundtransparent">
+      <attachment class="vertical_arrange" vertical_layout="-1,-1"/>
+      <container>
+        <attachment class="horizontal_arrange" horizontal_layout="-4,-3"/>
+        <widget class="label" font="title" alignment="left,centre_y">
+          <translation id="text" translation_id="255008" type="use" value="Youth Facilities[COMMENT: heading; team_information_panel; the standard of a team's youth facilities]" />
+        </widget>
+        <widget class="youth_facilities_stars_label" alignment="right,centre_y">
+          <record id="object_property" get_property="Cfc*"/>
+        </widget>
+      </container>
+      <container>
+        <attachment class="horizontal_arrange" horizontal_layout="-1,-4"/>
+        <container/>
+        <widget class="youth_facilities_description_text" alignment="right,centre_y">
+          <record id="object_property">
+            <integer id="get_property" value="Cfcs"/>
+          </record>
+        </widget>
+      </container>
+    </container>
+    <!-- 3 -->
+    <container class="main_subtle_box">
+      <attachment class="vertical_arrange" vertical_layout="-1,-1"/>
+      <container>
+        <attachment class="horizontal_arrange" horizontal_layout="-4,-3"/>
+        <widget class="label" font="title" alignment="left,centre_y">
+          <translation id="text" translation_id="325853" type="use" value="Junior Coaching[COMMENT: heading; team_information_panel; the standard of the team's youth setup coaching, NOTE: This is a minor string change - 'Youth Coaching' changed to 'Junior coaching'. Please use 'Top 10 Matches']" />
+        </widget>
+        <widget class="stars_range_strip" alignment="right,centre_y">
+          <record id="object_property" get_property="Cytv"/>
+        </widget>
+      </container>
+      <container>
+        <attachment class="horizontal_arrange" horizontal_layout="-1,-4"/>
+        <container/>
+        <widget class="youth_coaching_status_label" id="crep" alignment="right,centre_y">
+          <record id="object_property">
+            <integer id="get_property" value="Cyos"/>
+          </record>
+        </widget>
+      </container>
+    </container>
+    <!-- 4 -->
+    <container class="wannachup_roundtransparent">
+      <attachment class="vertical_arrange" vertical_layout="-1,-1"/>
+      <container>
+        <attachment class="horizontal_arrange" horizontal_layout="-4,-3"/>
+        <widget class="label" font="title" alignment="left,centre_y">
+          <translation id="text" translation_id="308084" type="use" value="Youth Recruitment[COMMENT: heading; team_information_panel; the standard of the team's youth recruitment network]" />
+        </widget>
+        <widget class="stars_range_strip" alignment="right,centre_y">
+          <record id="object_property" get_property="Crcb"/>
+        </widget>
+      </container>
+      <container>
+        <attachment class="horizontal_arrange" horizontal_layout="-1,-4"/>
+        <container/>
+        <widget class="youth_recruitment_status_label" id="crep" alignment="right,centre_y">
+          <record id="object_property">
+            <integer id="get_property" value="Crcs"/>
+          </record>
+        </widget>
+      </container>
+    </container>
+
+  </container>
+</panel>

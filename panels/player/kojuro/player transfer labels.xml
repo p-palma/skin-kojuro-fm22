@@ -1,0 +1,57 @@
+<panel>
+    <layout class="vertical_arrange" vertical_alignment="fill" vertical_gap="1" />
+
+    <!-- Transfer Status -->
+    <container class="wannachup_roundtransparent" draw_horizontal_dividers="false">
+      <layout class="stick_to_sides_attachment" alignment="horizontal" apply_to_children="true"/>
+      <layout class="arrange_vertical_attachment" layout="-1,5,-1,-1" gap="0"/>
+
+      <!-- 1 - Transfer Status -->
+      <container class="main_subtle_box">
+        <attachment class="vertical_arrange" vertical_layout="-1,-1"/>
+
+        <container>
+          <attachment class="horizontal_arrange" horizontal_layout="-1,-2"/>
+
+          <widget class="text" font="label" colour="faded text" alignment="left,centre_y">
+              <translation id="text" translation_id="227953" type="use" value="Transfer Status" />
+          </widget>
+
+          <container>
+              <layout class="stick_to_sides_attachment" apply_to_children="true"/>
+              <widget class="info_icon_hint_text" id="TStR" secondary_icon=""/>
+              <widget class="transfer_status_label" id="TSta" size="small" alignment="right,centre_y"/>
+          </container>
+
+        </container>
+
+      </container>
+
+      <container height="5" priority="1" gap="0"/>
+
+      <!-- 1 - Loan Status -->
+      <container class="main_subtle_box">
+        <attachment class="vertical_arrange" vertical_layout="-1,-1"/>
+
+        <container>
+          <attachment class="horizontal_arrange" horizontal_layout="-1,-2"/>
+
+          <widget class="text" font="label" colour="faded text" alignment="left,centre_y">
+              <translation id="text" translation_id="247489" type="use" value="Loan Status" />
+          </widget>
+
+          <container>
+              <layout class="stick_to_sides_attachment" apply_to_children="true"/>
+              <widget class="info_icon_hint_text" id="LStR" secondary_icon=""/>
+              <widget class="loan_status_label" id="LSta" size="small" alignment="right,centre_y" />
+          </container>
+
+        </container>
+
+      </container>
+
+      <container height="5" priority="1" gap="0"/>
+
+    </container>
+
+</panel>

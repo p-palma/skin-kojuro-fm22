@@ -1,0 +1,74 @@
+<panel>
+
+    <layout class="stick_to_sides_attachment" alignment="all" inset="0" apply_to_children="true"/>
+    <layout class="stick_to_sides_attachment" alignment="all" inset="0"/>
+    <!-- these are defaults tablet_slots sizes-->
+    <integer id="TbWs" value="300"/>
+    <integer id="TbWm" value="650"/>
+    <integer id="TbWl" value="1070"/>
+
+
+    <list id="properties_to_forward">
+        <record get_property="HNEp" target="NEvp" set_property="hidn"/>
+        <record get_property="HFep" target="FEEP" set_property="hidn"/>
+        <record get_property="HTtp" target="TTab" set_property="hidn"/>
+        <record get_property="OTfi" target="TTab" set_property="OTfi"/>
+        <record get_property="HTsi" target="TTab" set_property="HTsi"/>
+        <record get_property="OTsi" target="TTab" set_property="OTsi"/>
+        <record get_property="HSMt" target="TTab" set_property="HSMt"/>
+        <record get_property="ASMt" target="TTab" set_property="ASMt"/>
+    </list>
+
+    <container>
+        <attachment_group class="horizontal_arrange" horizontal_layout="342,-1" horizontal_alignment="right,extend" horizontal_offset="0"
+                          vertical_inset="0" horizontal_gap="8"/>
+
+        <container max-width="342">
+            <layout class="stick_to_sides_attachment" alignment="all" inset="0" apply_to_children="true"/>
+
+            <container id="NEvp">
+                <attachment_group class="vertical_arrange" vertical_alignment="bottom,extend"/>
+
+                <container class="main_transparent_box" appearance="boxes/custom/match/timeline stats/paper"
+                           red_replacement="bg">
+                    <animation class="scale_animation" start_value="1, 0" end_value="1, 1" duration="0.3"
+                               delay="1.4" end_mode="hold_end" tween="ease_out" coord_mode="relative_to_target"
+                               centre_point="top"/>
+                    <animation class="scale_animation" start_value="1, 0" end_value="1, 1" duration="0.3"
+                               delay="0.2" end_mode="hold_end" tween="ease_out" coord_mode="relative_to_target"
+                               centre_point="top" trigger_id="hidden" trigger_value="false"/>
+                    <layout class="stick_to_sides_attachment" alignment="all" inset="0" apply_to_children="true"/>
+
+                    <attachment class="match_ball_fade_attachment"/>
+
+                    <widget class="match_notable_events_panel">
+
+                        <animation class="fade_animation" start_value="0" end_value="1" duration="0.5" delay="1.6"
+                                   end_mode="hold_end"/>
+                        <animation class="fade_animation" start_value="0" end_value="1" duration="0.5" delay="0.4"
+                                   end_mode="hold_end" trigger_id="hidden" trigger_start="false"
+                                   trigger_end="true"/>
+
+                        <record id="object_property">
+                            <integer id="get_property" value="objt"/>
+                            <integer id="set_property" value="objt"/>
+                        </record>
+                    </widget>
+
+
+                </container>
+
+                <widget class="spacer" height="47"/>
+            </container>
+
+        </container>
+
+        <!--match information-->
+        <container class="client_object_viewer_xml_panel" file="match/match touchline tablet panel" id="TTab">
+            <record id="object_property" get_property="objt" set_property="objt"/>
+        </container>
+
+
+    </container>
+
+</panel>

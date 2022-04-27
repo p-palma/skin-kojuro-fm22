@@ -1,0 +1,73 @@
+<panel>
+    <layout class="arrange_vertical_attachment" alignment="bottom,extend" offset="0" gap="0"/>
+    <layout class="stick_to_sides_attachment" alignment="horizontal" inset="0" apply_to_children="true"/>
+
+    <!--	<animation class="fade_on_hide_animation" duration="0.1" end_mode="stop"/>-->
+    <!--	<animation class="position_animation" tween="ease_in_out" duration="0.45"/>-->
+
+    <container>
+
+        <!-- Logo-->
+        <container id="logc">
+            <layout class="stick_to_sides_attachment" alignment="all" inset="0" apply_to_children="true"/>
+            <layout class="stick_to_sides_attachment" alignment="all" inset="0"/>
+
+            <container class="transformation_container">
+                <attachment_group class="vertical_arrange" vertical_alignment="top,extend" vertical_offset="0"
+                                  horizontal_inset="0"/>
+                <list id="transformations">
+                    <record type="rotation" value="0"/>
+                </list>
+                <widget class="object_portrait_picture" id="lot2" keep_aspect_ratio="true" image_alignment="middle"
+                        transparency="0.25">
+                    <layout class="centre_in_parent_attachment" alignment="horizontal" offset="0" priority="1"/>
+                    <layout class="stick_to_sides_attachment" alignment="top" inset="55" priority="1"/>
+                    <record id="object_property" get_property="Pclb" set_property="objt"/>
+                </widget>
+            </container>
+        </container>
+
+        <!-- Player picture -->
+        <widget class="object_portrait_picture" id="pict" scale_picture="true" image_alignment="bottom">
+            <layout class="stick_to_sides_attachment" alignment="vertical" inset="0"/>
+            <layout class="stick_to_sides_attachment" alignment="horizontal" inset="0"/>
+
+            <record id="object_property">
+                <integer id="get_property" value="objt"/>
+                <integer id="set_property" value="objt"/>
+            </record>
+        </widget>
+
+        <!-- captain icon-->
+        <widget class="picture" id="capi" scale_picture="true" file="icons/16px/captain" hidden="false" width="16"
+                height="16">
+            <layout class="stick_to_sides_attachment" alignment="left" inset="0"/>
+            <layout class="stick_to_sides_attachment" alignment="top" inset="0"/>
+        </widget>
+
+        <!-- Icons (Injury, star player etc)-->
+        <container id="icoC" height="16" width="16" class="bordered_box" appearance="boxes/custom/solid/rounded/paper">
+            <layout class="stick_to_sides_attachment" alignment="top" inset="0" apply_to_children="true"/>
+            <layout class="arrange_horizontal_attachment" alignment="right" offset="0" gap="2"/>
+            <layout class="stick_to_sides_attachment" alignment="top" inset="0"/>
+            <layout class="stick_to_sides_attachment" alignment="right" inset="0"/>
+
+            <record id="default_properties" image_alignment="centre" hidden="true" width="16" height="16"/>
+
+            <widget class="picture" id="PTgs" file="icons/16px/goal" red_replacement="text"/>
+            <widget class="picture" id="PTas" file="icons/16px/assist" red_replacement="text"/>
+            <widget class="picture" id="PTrt" file="icons/16px/key player"/>
+            <widget class="picture" id="PNba" file="icons/16px/yellow card"/>
+            <widget class="picture" id="PHNO" file="icons/16px/debut"/>
+        </container>
+
+    </container>
+
+    <!-- Name -->
+    <container class="bordered_box" appearance="boxes/custom/attributes/paper" red_replacement="woz_3rd" height="16">
+        <layout class="stick_to_sides_attachment" alignment="all" inset="0" apply_to_children="true"/>
+        <widget class="label" id="name" size="9" alignment="centre, can_scale" auto_size="vertical" multiline="true"
+                colour="primary"/>
+    </container>
+
+</panel>

@@ -1,0 +1,56 @@
+﻿<panel>
+	<layout class="stick_to_sides_attachment" alignment="all" inset="0" apply_to_children="true" />
+ 
+	<list id="properties_to_forward">
+		<record get_property="dit1" target="slt1" set_property="default_item"/>
+		<record get_property="dit2" target="slt2" set_property="default_item"/>
+		<record get_property="dit3" target="slt3" set_property="default_item"/>
+		<record get_property="dit3" target="slt4" set_property="default_item"/>
+		<record get_property="sid1" target="slt1" set_property="cfID"/>
+		<record get_property="sid2" target="slt2" set_property="cfID"/>
+		<record get_property="sid3" target="slt3" set_property="cfID"/>
+		<record get_property="sid3" target="slt4" set_property="cfID"/>
+		<record get_property="HSMt" target="slt1" set_property="HSMt"/>
+		<record get_property="HSMt" target="slt2" set_property="HSMt"/>
+		<record get_property="HSMt" target="slt3" set_property="HSMt"/>
+		<record get_property="HSMt" target="slt4" set_property="HSMt"/>
+		<record get_property="ASMt" target="slt1" set_property="ASMt"/>
+		<record get_property="ASMt" target="slt2" set_property="ASMt"/>
+		<record get_property="ASMt" target="slt3" set_property="ASMt"/>
+		<record get_property="ASMt" target="slt4" set_property="ASMt"/>
+
+	</list>
+ 
+	<container class="horizontal_adaptive_container" draw_vertical_dividers="true" gap="20">
+
+		<container class="client_object_viewer_xml_panel" id="slt4" file="match/match touchline tablet slot" minimum_width="275" priority="3" default_width="-3">
+			<record id="object_property">
+				<integer id="get_property" value="objt" />
+				<integer id="set_property" value="objt" />
+			</record>
+		</container>
+
+		<container class="client_object_viewer_xml_panel" id="slt3" file="match/match touchline tablet slot" minimum_width="275" priority="3" default_width="-3">
+			<record id="object_property">
+				<integer id="get_property" value="objt" />
+				<integer id="set_property" value="objt" />
+			</record>
+		</container>
+ 
+		<container class="client_object_viewer_xml_panel" id="slt2" file="match/match touchline tablet slot" minimum_width="275" priority="2" default_width="-3">
+			<record id="object_property">
+				<integer id="get_property" value="objt" />
+				<integer id="set_property" value="objt" />
+			</record>
+		</container>
+ 
+		<container class="client_object_viewer_xml_panel" id="slt1" file="match/match touchline tablet slot"  minimum_width="275" priority="1" default_width="-3">
+			<record id="object_property">
+				<integer id="get_property" value="objt" />
+				<integer id="set_property" value="objt" />
+			</record>
+		</container>
+ 
+	</container>
+ 
+</panel>

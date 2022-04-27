@@ -1,0 +1,33 @@
+<record>
+	<!-- we don't preload the graphics files, but we do cache them once they've loaded -->
+	<boolean id="cache" value="true"/>
+    <boolean id="preload" value="false" />
+    <list id="preload_types">
+        <record type="XML" value="true" />
+		<record type="SVG" value="true" />
+    </list>
+	<list id="maps">
+		<!-- Chinese  overides -->
+		
+		<!-- FM Logo -> Options icon-->
+		<record from="icons/16px/settings" to="graphics/icons/16px/fm" filter="chinese"/>
+		<record from="icons/16px/settings" to="graphics/icons/16px/fm" filter="chinese (traditional)"/>
+		<record from="icons/26px/settings" to="graphics/icons/26px/fm" filter="chinese"/>
+		<record from="icons/26px/settings" to="graphics/icons/26px/fm" filter="chinese (traditional)"/>
+		<record from="icons/48px/settings" to="graphics/icons/48px/fm" filter="chinese"/>
+		<record from="icons/48px/settings" to="graphics/icons/48px/fm" filter="chinese (traditional)"/>
+		
+		<!-- Editor Image-->
+		<record from="icons/custom/store/ige/image_chinese" to="graphics/icons/custom/store/ige/image" filter="chinese"/>
+		<record from="icons/custom/store/ige/image_chinese" to="graphics/icons/custom/store/ige/image" filter="chinese (traditional)"/>
+		<record from="icons/custom/store/ige/image_chinese@2x" to="graphics/icons/custom/store/ige/image@2x" filter="chinese"/>
+		<record from="icons/custom/store/ige/image_chinese@2x" to="graphics/icons/custom/store/ige/image@2x" filter="chinese (traditional)"/>
+		
+		<!-- WeGame 'workshop' Image-->		
+		<record from="icons/custom/store/sections/workshop_wegame" to="graphics/icons/custom/store/sections/workshop" filter="chinese"/>
+		<record from="icons/custom/store/sections/workshop_wegame" to="graphics/icons/custom/store/sections/workshop" filter="chinese (traditional)"/>
+		<record from="icons/custom/store/sections/workshop_wegame@2x" to="graphics/icons/custom/store/sections/workshop@2x" filter="chinese"/>
+		<record from="icons/custom/store/sections/workshop_wegame@2x" to="graphics/icons/custom/store/sections/workshop@2x" filter="chinese (traditional)"/>
+	</list>		
+	
+</record>

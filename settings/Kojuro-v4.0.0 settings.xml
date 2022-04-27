@@ -1,0 +1,83 @@
+<properties version="1.0">
+
+    <!--
+     ============================================================
+     Default Settings Modified By This Skin
+
+     The definitions below will override the defaults contained
+     in the parent skins, or in the various global and application
+     settings files.
+
+     ============================================================
+     -->
+
+    <!-- misc properties -->
+    <real id="background_opacity" value="0"/>
+
+    <boolean id="disable_accent_colour" value="false"/>
+    <boolean id="disable_dark_accent_colour" value="false"/>
+    <boolean id="disable_primary_colour" value="false"/>
+    <boolean id="disable_secondary_colour" value="false"/>
+
+    <!-- Colour Scheme -->
+    <!-- The following colours define the base colours scheme for the skin. The colours are references by other colour names in fm colours.xml -->
+
+    <!-- Foreground colours - used for text, icon etc -->
+    <colour name="fg accent"    value="rgb(120,120,120)"/>
+
+    <!-- Background colours - used for background, boxes etc -->
+    <colour name="bg lighter"  value="rgb(41, 50, 57)"/>
+    <colour name="bg"          value="rgb(36, 45, 52)"/>
+    <colour name="bg darker"   value="rgb(32, 41, 48)"/>
+    <colour name="bg accent"   value="rgb(73, 106, 129)"/>
+    <colour name="matchscorekojuro"             value="rgb(226,226,226)"/>
+
+
+    <!-- Main Colours -->
+    <colour name="search filter active" value="bg accent"/>
+
+    <!-- <colour name="primary_button" value="bg accent"/>
+    <colour name="contrast_box_background" 	value="bg accent"/>
+    <colour name="edit_box_border" 	value="green"/>
+     -->
+    <!-- Switch -->
+    <!-- <colour name="switch_background" 																	value="fg"/>
+    <colour name="switch_border" 																		value="fg"/>
+    <colour name="switch_on" 																			value="green"/>
+    <colour name="switch_off" 																			value="fg"/> -->
+
+
+    <!-- Card colours - used for places where the colours are inverted in the default skin. Inbox, Report cards, etc -->
+    <colour name="card fg lighter"  value="rgb(255,255,255)"/>
+    <colour name="card fg"          value="rgb(244,244,244)"/>
+    <colour name="card fg darker"   value="rgb(205,205,205)"/>
+    <colour name="card bg lighter"  value="rgb(41, 50, 57)"/>
+    <colour name="card bg"          value="rgb(36, 45, 52)"/>
+    <colour name="card bg darker"   value="rgb(32, 41, 48)"/>
+
+    <colour name="processing_box_background" value="rgb(18, 19, 22)"/>
+
+    <!-- SCOUT CARD -->
+    <colour name="scout card" value="bg lighter" />
+    <colour name="scout card text" value="white" />
+
+    <!-- UI colours -->
+    <!-- These colours are used to recolour the appearance graphics used throughout the game, by replacing the red, green and blues of the graphics. -->
+    <!-- This allows fast creation of different colour schemes without having to modify and re-export the graphic assets -->
+
+    <colour name="graphskojuro"                 value="rgb(237,178,115)"/>
+    <colour name="title" 												value="rgb(205,205,205)" />
+    <colour name="bg alert" 										value="rgb(41, 50, 57)"/>
+    <colour name="kojuro"                       value="rgb(87, 87, 87)"/>
+
+    <!-- Fixtures rows calendar view -->
+    <colour name="fixture continental row" red="0" green="77" blue="137"/>          <!-- blue -->
+    <colour name="fixture cup row" red="194" green="72" blue="72"/>          <!-- red -->
+    <colour name="fixture friendly row" red="22" green="109" blue="12"/>          <!-- green -->
+
+    <!-- Box colours -->
+    <colour name="background" value="bg darker"/>
+    <colour name="ui_background" value="bg darker"/>
+    <colour name="calendar_cell_border" value="rgb(50, 50, 50)"/>
+
+</properties>

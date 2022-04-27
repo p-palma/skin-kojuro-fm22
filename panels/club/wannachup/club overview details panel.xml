@@ -1,0 +1,32 @@
+<panel>
+  <layout class="stick_to_sides_attachment" alignment="all" inset="0" apply_to_children="true"/>
+  <container navigation_container="true">
+    <attachment_group class="horizontal_arrange" horizontal_layout="500,-1,-1" horizontal_offset="0" horizontal_gap="4"/>
+
+    <widget class="club_overview_details_panel" file="club/kojuro/facilities info">
+      <record id="object_property" get_property="objt" set_property="objt"/>
+    </widget>
+
+    <container class="wannachup_round">
+      <translation id="title" translation_id="319446" type="use" value="League History[COMMENT: title for the league position history on the club overview panel]"/>
+      <layout class="stick_to_sides_attachment" alignment="all" inset="0" apply_to_children="true"/>
+      <widget class="club_league_history_graph" id="clhg" file="club/club league history graph basic">
+        <record id="object_property">
+          <integer id="get_property" value="objt"/>
+          <integer id="set_property" value="objt"/>
+        </record>
+      </widget>
+    </container>
+
+    <container class="title_link_box" appearance="wannachup/boxes/round" priority="1">
+      <translation id="link_title" translation_id="229821" type="use" value="Finances"/>
+      <string id="section" value="tfin"/>
+      <layout class="stick_to_sides_attachment" alignment="all" apply_to_children="true" inset="0"/>
+      <widget class="finances_short_wage_summary_panel" id="fina">
+        <translation id="title" translation_id="329952" type="use" value="Finance &amp; Salary[COMMENT: manager snapshot/home: wage &amp; finances summary panel heading]"/>
+        <record id="object_property" get_property="objt" set_property="objt"/>
+      </widget>
+    </container>
+
+  </container>
+</panel>

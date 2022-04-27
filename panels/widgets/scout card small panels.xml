@@ -1,0 +1,40 @@
+<panel navigation_container="true">
+    <container id="SUBP">
+        <layout class="stick_to_sides_attachment" alignment="all" apply_to_children="true" inset="8"/>
+        <layout class="stick_to_sides_attachment" alignment="all" inset="0"/>
+    </container>
+
+    <widget class="popup_button" id="popv" auto_size="horizontal" height="20" click_event="msis"
+            appearance="buttons/custom/customise panel/button" fixed="true">
+        <layout class="stick_to_sides_attachment" alignment="right,top" inset="12,8"/>
+    </widget>
+
+    <widget class="player_contract_panel" id="pcon" file="player/player contract small" late_loading="true">
+        <translation id="title" translation_id="230163" type="use" value="Contract"/>
+    </widget>
+
+    <widget class="player_positions_indicator_panel" id="ppi1"
+            file="player/kojuro/scout/player positions small horizontal" navigation_container="true"
+            default_focus="true">
+        <translation id="title" translation_id="230082" type="use" value="Positions"/>
+        <record id="object_property" get_property="objt" set_property="objt"/>
+    </widget>
+
+    <!--  Pros e contras-->
+    <widget class="player_scout_reports_panel" id="srp1" file="player/selector/player scout report small procons"
+            late_loading="true">
+        <translation id="title" type="use" value="ProCons"/>
+    </widget>
+
+    <widget file="player/player attribute analyser panel" id="paAn" class="client_object_viewer_xml_panel"
+            late_loading="true">
+        <translation id="title" translation_id="334971" type="use"
+                     value="Attribute Analysis[COMMENT: player overview; title for a panel showing an attribute analyisis diagram]"/>
+    </widget>
+
+    <widget class="player_history_injury_panel" id="phip" late_loading="true">
+        <translation id="title" translation_id="450787" type="use" value="Injury History" />
+        <record id="object_property" get_property="objt" set_property="objt"/>
+    </widget>
+
+</panel>

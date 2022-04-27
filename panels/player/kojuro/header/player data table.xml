@@ -1,0 +1,267 @@
+<panel>
+  <layout class="arrange_horizontal_attachment" layout="-1,5,-1" offset="0" gap="0"/>
+  <layout class="stick_to_sides_attachment" alignment="all" inset="0" apply_to_children="true"/>
+
+  <!--Nacionalidade | Idade | Moral | Forma Fisica -->
+  <container class="plain_box" draw_horizontal_dividers="false">
+    <layout class="stick_to_sides_attachment" alignment="horizontal" apply_to_children="true"/>
+    <layout class="arrange_vertical_attachment" layout="-1,-1,-1,-1" gap="0"/>
+
+    <!-- 1 - Nacionalidade -->
+    <container class="main_subtle_box">
+      <attachment class="vertical_arrange" vertical_layout="-1,-1"/>
+
+      <container>
+        <attachment class="horizontal_arrange" horizontal_layout="-1,-1"/>
+
+        <widget class="label" font="label" alignment="left,centre_y">
+          <translation id="text" translation_id="227841" type="use" value="Nationality"/>
+        </widget>
+
+        <widget class="nation_button" alignment="right,centre_y">
+          <record id="object_property">
+            <integer id="get_property" value="Pnat"/>
+          </record>
+        </widget>
+
+      </container>
+
+      <container>
+        <attachment class="horizontal_arrange" horizontal_layout="-1,-4"/>
+        <container/>
+
+        <widget class="international_appearances_label" size="small" alignment="right,centre_y">
+          <record id="object_property">
+            <integer id="get_property" value="Pist"/>
+          </record>
+        </widget>
+
+      </container>
+
+    </container>
+
+    <!-- 2 - Idade -->
+    <container class="wannachup_round">
+      <attachment class="vertical_arrange" vertical_layout="-1,-1"/>
+
+      <container>
+        <attachment class="horizontal_arrange" horizontal_layout="-1,-1"/>
+
+        <widget class="label" font="label" alignment="left,centre_y">
+          <translation id="text" translation_id="227770" type="use" value="Age[comment - person age]"/>
+        </widget>
+
+        <widget class="editable_client_object_property_panel" id="age" height="22">
+          <record id="widget_info" class="formatted_label" alignment="right,centre_y">
+            <translation id="format" translation_id="242551" type="use" value="[%number#1] years old"/>
+          </record>
+          <record id="widget_edit_info" width="0" height="0"/>
+          <record id="object_property" get_property="Page"/>
+        </widget>
+
+      </container>
+
+      <container>
+        <attachment class="horizontal_arrange" horizontal_layout="-1,-4"/>
+        <container/>
+        <!-- DoB -->
+        <widget class="editable_client_object_property_panel" id="dobl" size="small">
+          <record id="widget_info" class="game_formatted_label" alignment="right,centre_y" format="([%date#1-short])"/>
+          <record id="widget_properties" height="22"/>
+          <record id="object_property" get_property="Pdob"/>
+        </widget>
+      </container>
+
+    </container>
+
+    <!-- 2 - Moral -->
+    <container class="main_subtle_box">
+      <attachment class="vertical_arrange" vertical_layout="-1,-1"/>
+
+      <container>
+        <attachment class="horizontal_arrange" horizontal_layout="-1,-1"/>
+
+        <widget class="label" font="label" alignment="left,centre_y">
+          <translation id="text" translation_id="227839" type="use" value="Morale"/>
+        </widget>
+
+        <widget class="editable_client_object_property_panel" alignment="right,centre_y">
+          <record id="default_properties"/>
+          <record id="widget_info" class="morale_label" ShTx="true" alignment="centre_y" default_path="icons/custom/morale/normal/default" should_recolour="true"/>
+          <record id="object_property" get_property="Pmor"/>
+        </widget>
+
+      </container>
+
+    </container>
+
+    <!-- 4 Forma Fisica -->
+    <container class="wannachup_round">
+      <attachment class="vertical_arrange" vertical_layout="-1,-1"/>
+
+      <container>
+        <attachment class="horizontal_arrange" horizontal_layout="-2,-1"/>
+
+        <widget class="label" font="label" alignment="left,centre_y">
+          <translation id="text" translation_id="227793" type="use" value="Condition"/>
+        </widget>
+
+        <widget class="editable_client_object_property_panel" alignment="right, centre_y">
+          <record id="widget_info" class="player_condition_icon_widget" appearance="" label_disabled="true" icon_alignment="right"/>
+          <record id="object_property" get_property="PcOI"/>
+          <integer id="editing_property_to_store" value="Pcon"/>
+        </widget>
+
+      </container>
+
+      <container>
+        <attachment class="horizontal_arrange" horizontal_layout="-2,-1"/>
+
+        <widget class="label" font="label" alignment="left,centre_y">
+          <translation id="text" translation_id="388919" type="use" value="Match Sharpness[COMMENT: label for the player's match fitness, i.e. what condition he's currently in if he were to be selected for the next fixture]"/>
+        </widget>
+
+        <widget class="editable_client_object_property_panel" alignment="right, centre_y">
+          <record id="widget_info" class="player_match_sharpness_icon_widget" appearance="" label_disabled="true" icon_alignment="right"/>
+          <record id="object_property" get_property="PftI"/>
+          <integer id="editing_property_to_store" value="Pfit"/>
+        </widget>
+
+      </container>
+
+    </container>
+
+  </container>
+
+  <container width="5" priority="1" gap="0"/>
+
+  <!-- Clube | Classificação Média | Salário/Contrato | Transferencia  -->
+  <container class="plain_box" draw_horizontal_dividers="false">
+    <layout class="stick_to_sides_attachment" alignment="horizontal" apply_to_children="true"/>
+    <layout class="arrange_vertical_attachment" layout="-1,-1,-1,-1" gap="0"/>
+
+    <!-- 1 - Clube -->
+    <container class="main_subtle_box">
+      <attachment class="vertical_arrange" vertical_layout="-1,-1"/>
+
+      <container>
+        <attachment class="horizontal_arrange" horizontal_layout="-1,-1"/>
+
+        <widget class="label" font="label" alignment="left,centre_y">
+          <translation id="text" translation_id="227737" type="use" value="Club"/>
+        </widget>
+
+        <widget class="club_button" alignment="right,centre_y">
+          <record id="object_property">
+            <integer id="get_property" value="Pclb"/>
+            <integer id="set_property" value="valu"/>
+          </record>
+        </widget>
+
+      </container>
+
+      <container>
+        <attachment class="horizontal_arrange" horizontal_layout="-1,-4"/>
+        <container/>
+
+        <widget class="player_extra_details_text" id="plex" auto_size="vertical" alignment="right,centre_y" multiline="false" size="small">
+          <record id="object_property" get_property="PExD"/>
+        </widget>
+
+      </container>
+
+    </container>
+
+    <!-- 1 - Classificação Média -->
+    <container class="wannachup_round">
+      <attachment class="vertical_arrange" vertical_layout="-1,-1"/>
+
+      <container>
+        <attachment class="horizontal_arrange" horizontal_layout="-1,-1"/>
+
+        <widget class="text" id="Pptl" font="label" alignment="left,centre_y">
+          <translation id="text" translation_id="492002" type="use" value="Agreed Playing Time[COMMENT: AREA: Player Happiness; SUB-AREA: Contract Promises; FR-BN: 14013; TONE: Formal; CHARLIMIT: None; REF-ID: n/a; NOTE: contract promise type]"/>
+        </widget>
+
+        <widget class="client_object_property_panel" property="Ppth">
+          <record id="object_property">
+            <integer id="get_property" value="objt"/>
+            <integer id="set_property" value="objt"/>
+          </record>
+          <record id="widget_properties" alignment="right,centre_y" abbt="true" show_hover_popup="true"/>
+        </widget>
+
+      </container>
+
+      <container>
+        <attachment class="horizontal_arrange" horizontal_layout="-1,-4"/>
+        <container/>
+
+        <widget class="client_object_property_panel" id="Pptv" size="small" property="Pcpt" auto_size="vertical">
+          <record id="object_property">
+            <integer id="get_property" value="objt"/>
+            <integer id="set_property" value="objt"/>
+          </record>
+          <record id="widget_properties" alignment="right,centre_y" auto_size="vertical"/>
+          <record id="widget_info" ShTx="true" alignment="centre_y" default_path="icons/custom/morale/normal/default" should_recolour="true"/>
+        </widget>
+
+      </container>
+
+    </container>
+
+    <!-- 2 - Salário/Contrato -->
+    <container class="main_subtle_box">
+      <attachment class="vertical_arrange" vertical_layout="-1,-1"/>
+
+      <container>
+        <attachment class="horizontal_arrange" horizontal_layout="-1,-1,"/>
+
+        <widget class="label" font="label" alignment="left,centre_y">
+          <translation id="text" translation_id="257347" type="use" value="Contract[COMMENT - transfer status filter text; offers at contract stage]"/>
+        </widget>
+
+        <widget class="editable_client_object_property_panel" id="Pcww" alignment="right,centre_y">
+          <record id="object_property" get_property="Pcww"/>
+        </widget>
+
+      </container>
+
+      <container>
+        <attachment class="horizontal_arrange" horizontal_layout="-1,-4"/>
+        <container/>
+
+        <widget class="editable_client_object_property_panel" id="Pcex" auto_size="vertical" size="small">
+          <record id="widget_info" class="game_formatted_label" alignment="right,centre_y" auto_size="vertical" format="([%date#1-short])"/>
+          <record id="widget_properties"/>
+          <record id="object_property" get_property="Pcex"/>
+        </widget>
+
+      </container>
+
+    </container>
+
+    <!-- 4 - Transferencia -->
+    <container class="main_box">
+      <attachment class="vertical_arrange" vertical_layout="-1"/>
+
+      <container>
+        <attachment class="horizontal_arrange" horizontal_layout="20,-1,20"/>
+
+        <container width="20" priority="1" gap="0"/>
+
+        <widget class="editable_client_object_property_panel" id="valu" font="bold" colour="text">
+          <translation id="format" translation_id="383826" type="use" value="Valued at [%cash#1-roundsmall-short][COMMENT: FR 10661; player overview; string diaplyed a player's estimated monetary value]"/>
+          <record id="widget_properties" alignment="centre"/>
+          <record id="object_property" get_property="Pdva" dont_set_hint="true"/>
+        </widget>
+
+        <container width="20" priority="1" gap="0"/>
+
+      </container>
+
+    </container>
+
+  </container>
+
+</panel>
