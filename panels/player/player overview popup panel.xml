@@ -1,0 +1,70 @@
+<panel>
+	<attachment_group class="vertical_arrange_autosize" vertical_offset="0" vertical_gap="0" horizontal_inset="0" />
+
+	<boolean id="suppress_update_after_selection" value="true"/>
+
+
+	<!-- Personal Details -->
+	<container class="horizontal_arrange_container" layout="300,-1" gap="8" height="218" id="popu">
+
+		<!-- Player Box -->
+		<container>
+			<layout class="stick_to_sides_attachment" apply_to_children="true"/>
+
+			<widget file="player/kojuro/header/player face and kit popup" id="Pfk" class="client_object_viewer_xml_panel"
+					late_loading="true">
+				<record id="object_property" get_property="objt" set_property="objt"/>
+			</widget>
+
+		</container>
+
+		<container>
+			<layout class="stick_to_sides_attachment" apply_to_children="true"/>
+
+			<widget file="player/kojuro/header/player data table" id="Pdt" class="client_object_viewer_xml_panel"
+					late_loading="true">
+				<record id="object_property" get_property="objt" set_property="objt"/>
+			</widget>
+
+		</container>
+
+	</container>
+
+	<widget class="horizontal_divider" />
+
+	<!-- Middle row of large panels -->
+	<container height="380">
+		<layout class="arrange_horizontal_attachment" alignment="left,extend" offset="5" gap="1"/>
+		<layout class="stick_to_sides_attachment" alignment="vertical" inset="0" apply_to_children="true"/>
+
+		<container class="client_object_viewer_selector_panel" id="pus1" file="player/selector/player overview big selector panel" save_session_state="true">
+			<widget class="player_attributes_panel" id="patt" late_loading="true">
+				<translation id="title" translation_id="229822" type="use" value="Attributes"/>
+				<record id="object_property" get_property="objt" set_property="objt"/>
+			</widget>
+		</container>
+	</container>
+
+	<container class="inner_subtle_box" height="200" draw_vertical_dividers="true">
+		<layout class="arrange_horizontal_attachment" layout="-1, -1" offset="0" gap="10"/>
+		<layout class="stick_to_sides_attachment" alignment="vertical" inset="5" apply_to_children="true"/>
+
+		<record id="default_properties" file="player/selector/player overview popup selector panel" save_session_state="true" />
+
+		<container class="client_object_viewer_selector_panel" id="pus2" >
+			<integer id="default_for_unemployed_managers" value="pscR"/>
+			<integer id="default_for_international_managers_other_team" value="pscR"/>
+			<integer id="default_for_everyone_else" value="pscR"/>
+			<integer id="default_for_versus_mode" value="pscR"/>
+		</container>
+
+
+		<container class="client_object_viewer_selector_panel" id="pus3">
+			<integer id="default_for_unemployed_managers" value="Phap"/>
+			<integer id="default_for_international_managers_other_team" value="Phap"/>
+			<integer id="default_for_everyone_else" value="Phap"/>
+			<integer id="default_for_versus_mode" value="Phap"/>
+		</container>
+	</container>
+
+</panel>

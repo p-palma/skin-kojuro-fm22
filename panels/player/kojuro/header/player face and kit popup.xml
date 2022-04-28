@@ -1,0 +1,68 @@
+<panel>
+  <layout class="stick_to_sides_attachment" alignment="all" apply_to_children="true" inset="0" />
+
+  <container class="wannachup_roundtransparent" priority="1" default_height="-1">
+    <layout class="arrange_vertical_attachment" offset="0" gap="0"/>
+    <layout class="stick_to_sides_attachment" alignment="all" inset="0" apply_to_children="true"/>
+
+    <widget class="player_status_all_button" id="psAB">
+      <layout class="centre_in_parent_attachment" alignment="horizontal" offset="0"/>
+      <layout class="stick_to_sides_attachment" alignment="top" inset="0"/>
+      <record id="object_property">
+        <integer id="get_property" value="Pnfa"/>
+      </record>
+    </widget>
+
+    <widget class="kit_icon" id="kitV" scale_picture="true" keep_aspect_ratio="true" height="100" width="240" image_alignment="bottom" kit_zoom_level="1">
+
+      <layout class="centre_in_parent_attachment" alignment="horizontal" offset="25" priority="1"/>
+      <layout class="stick_to_sides_attachment" alignment="all" inset="20" priority="1"/>
+
+      <record id="object_property">
+        <list id="get_properties">
+          <record>
+            <integer id="get_property" value="Pers"/>
+            <integer id="set_property" value="Pers"/>
+          </record>
+          <record>
+            <integer id="get_property" value="Pctx"/>
+            <integer id="set_property" value="Pcte"/>
+          </record>
+        </list>
+      </record>
+    </widget>
+
+    <widget class="picture" id="foto">
+      <layout class="centre_in_parent_attachment" alignment="horizontal" offset="-70" priority="1"/>
+      <layout class="stick_to_sides_attachment" alignment="all" inset="20" priority="1"/>
+      <boolean id="scale_picture" value="true"/>
+      <boolean id="keep_aspect_ratio" value="true"/>
+      <flags id="image_alignment" value="centre"/>
+
+      <attachment class="test_setting_attachment" get_setting="show_portraits" default_value="true" set_property="hidn">
+        <list id="value">
+          <boolean value="false"/>
+        </list>
+      </attachment>
+
+      <record id="object_property">
+        <list id="get_properties">
+          <record>
+            <integer id="get_property" value="fcgn"/>
+
+          </record>
+          <record>
+            <integer id="get_property" value="Pfke"/>
+
+          </record>
+          <record>
+            <integer id="get_property" value="prpc"/>
+            <integer id="set_property" value="valu"/>
+          </record>
+        </list>
+      </record>
+    </widget>
+
+  </container>
+
+</panel>
